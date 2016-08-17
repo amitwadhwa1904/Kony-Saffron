@@ -1,3 +1,6 @@
+/**
+ * splashScreenCheck
+ */
 function splashScreenCheck() {
     appscore.print.start();
     if (appscore.app.isNetworkAvailable() == true) {

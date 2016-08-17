@@ -19,7 +19,6 @@ function frmLogin_setUI() {
     frmLogin.headers[0].lblHeader.text = LOGIN_TITLE;
     // If gRememberMe_Support if true, enable remember me feature
     // otherwise disable the feature
-    frmLogin.hboxLblRememberMe.isVisible = gRememberMe_Support;
     appscore.print.stop();
 }
 
@@ -48,10 +47,6 @@ function frmlogin_validateData() {
         appscore.alert.error("Invalid Email", "Please provide valid email address.");
         return false;
     }
-    if (utils.validate.isStringNullEmpty(frmLogin.txtMobile) || !utils.validate.phone(frmLogin.txtMobile.text)) {
-        appscore.alert.error("Invalid Mobile", "Please provide valid mobile.");
-        return false;
-    }
     if (utils.validate.isStringNullEmpty(frmLogin.txtPassword)) {
         appscore.alert.error("Password Required", "Please enter your password.");
         return false;
@@ -62,6 +57,5 @@ function frmlogin_validateData() {
 
 function jsfrmLogin_presenter_link() {
     loginPresenter.txtEmail = frmLogin.txtEmail;
-    loginPresenter.txtMobile = frmLogin.txtMobile;
     loginPresenter.txtPassword = frmLogin.txtPassword;
 }

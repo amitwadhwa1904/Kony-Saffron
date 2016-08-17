@@ -1,15 +1,15 @@
 //startup.js file
 var globalhttpheaders = {};
 var appConfig = {
-    appId: "KonyTemplate",
-    appName: "KonyTemplate",
+    appId: "KonyTemplatecopy",
+    appName: "KonyTemplatecopy",
     appVersion: "1.0.0",
     platformVersion: null,
     serverIp: "192.168.30.51",
     serverPort: "80",
     secureServerPort: "443",
     isDebug: false,
-    middlewareContext: "KonyTemplate",
+    middlewareContext: "KonyTemplatecopy",
     isturlbase: "https://appscore.konycloud.com/services",
     isMFApp: true,
     appKey: "cbbc1d8763258b0e6c1198f153ccc6df",
@@ -114,8 +114,8 @@ var appConfig = {
     svcDocRefresh: false,
     svcDocRefreshTimeSecs: -1,
     eventTypes: [],
-    url: "https://appscore.konycloud.com/KonyTemplate/MWServlet",
-    secureurl: "https://appscore.konycloud.com/KonyTemplate/MWServlet"
+    url: "https://appscore.konycloud.com/KonyTemplatecopy/MWServlet",
+    secureurl: "https://appscore.konycloud.com/KonyTemplatecopy/MWServlet"
 };
 sessionID = "";
 
@@ -124,13 +124,20 @@ function appInit(params) {
     kony.application.setCheckBoxSelectionImageAlignment(constants.CHECKBOX_SELECTION_IMAGE_ALIGNMENT_RIGHT);
     kony.application.setDefaultTextboxPadding(false);
     kony.application.setRespectImageSizeForImageWidgetAlignment(true);
+    initializeflxhdrWithNoOption();
+    initializeflxhdrWithThreeOptions();
+    initializeflxhdrWithTwoOptions();
     initializehdrWithBackOption();
     initializehdrWithNoOption();
     initializehdrWithTwoOptions();
     frmForgotPasswordGlobals();
+    frmHamburgerGlobals();
     frmHomeGlobals();
+    frmHome1Globals();
     frmLoginGlobals();
+    frmLogin1Globals();
     frmSplashGlobals();
+    MenuFormGlobals();
     setAppBehaviors();
 };
 

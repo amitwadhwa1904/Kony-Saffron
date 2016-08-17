@@ -1,0 +1,50 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "50dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "58dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s1b35e783fef4aefa67245adf131e9f9",
+    "_text_": "Logindd",
+    "_top_": {
+        "type": "string",
+        "value": "30dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "260dp"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s3ee38a8593f47f48ac311d7ef2ae1ad",
+    "id": "Button01ecb6c0c852646",
+    "ide_onClick": "AS_Button_31c5965093c2414b931ba7fe9d585e3a",
+    "info": null,
+    "isvisible": true,
+    "kuid": "db61c551a49547e495dbab60773d9266",
+    "name": "kony.ui.Button",
+    "parent": "FlexContainer06dc7ef4d4a494b",
+    "pf": "frmHome",
+    "wType": "Button",
+    "zindex": 1
+}

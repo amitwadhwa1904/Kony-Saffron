@@ -42,9 +42,9 @@ function initializehdrWithNoOption() {
         "containerWeight": 59,
         "contentAlignment": constants.CONTENT_ALIGN_CENTER,
         "hExpand": true,
-        "margin": [1, 1, 1, 1],
+        "margin": [1, 0, 1, 0],
         "marginInPixel": true,
-        "padding": [0, 5, 0, 5],
+        "padding": [0, 2, 0, 2],
         "paddingInPixel": false,
         "vExpand": false,
         "widgetAlignment": constants.WIDGET_ALIGN_CENTER

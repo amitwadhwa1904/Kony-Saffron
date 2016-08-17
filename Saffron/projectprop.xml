@@ -377,7 +377,7 @@
     <attributes name="wp10versionbuildkey" value="0"/>
     <attributes name="WRITE_HISTORY_BOOKMARKS" value="false"/>
     <attributes name="INTERNET" value="true"/>
-    <attributes name="enablepushnotifications" value="false"/>
+    <attributes name="enablepushnotifications" value="true"/>
     <attributes name="USE_SIP" value="false"/>
     <attributes name="secondarytilefunctionkey" value="None"/>
     <attributes name="ACCESS_FINE_LOCATION" value="false"/>
@@ -450,7 +450,7 @@
     <attributes name="bb10description" value=""/>
     <attributes name="wp8cyclesmallkey" value=""/>
     <attributes name="ACCESS_LOCATION_EXTRA_COMMANDS" value="false"/>
-    <attributes name="andmanifesttags" value=""/>
+    <attributes name="andmanifesttags" value="&lt;uses-permission android:name=&quot;com.google.android.c2dm.permission.RECEIVE&quot; /&gt; &lt;uses-permission android:name=&quot;android.permission.INTERACT_ACROSS_USERS_FULL&quot; /&gt;"/>
     <attributes name="WRITE_CONTACTS" value="false"/>
     <attributes name="VIBRATE" value="false"/>
     <attributes name="ID_CAP_IDENTITY_DEVICE" value="true"/>

@@ -7,17 +7,21 @@
             "name": "eventobject"
         }],
         "contextObj": {
-            "name": "CopyForm07ec76da338c545",
+            "name": "frmLogin",
             "type": "forms",
             "platform": null,
             "KUID": "36f5225924db42d387dd619732bc21b3"
         },
         "language": "js",
         "actions": [{
-            "id": "ADD_SNIPPET_ide_preShow_ab36ef84745b408c86e55aea318edc29",
-            "type": "ADD_SNIPPET",
-            "codeSnippet": "Form08b5c72c3b48248.headers[0].lblHeader.text = \"mycaption\";",
-            "callbackType": null
+            "id": "INVOKE_FUNCTION___9a742498c1014e5b92435422b5d79b28",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "frmLogin_preShow",
+            "display": "frmLogin_preShow",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
         }]
     }
 }

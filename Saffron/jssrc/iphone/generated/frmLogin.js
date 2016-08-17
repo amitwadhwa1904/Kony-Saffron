@@ -1,387 +1,528 @@
 function addWidgetsfrmLogin() {
-    var imgLogo = new kony.ui.Image2({
-        "id": "imgLogo",
-        "imageWhenFailed": "rsz_appscore_logo.png",
-        "imageWhileDownloading": "rsz_appscore_logo.png",
+    frmLogin.setDefaultUnit(kony.flex.DP);
+    var FlexContainer03de438e5fa574e = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "100%",
+        "id": "FlexContainer03de438e5fa574e",
         "isVisible": true,
-        "src": "rsz_appscore_logo.png"
-    }, {
-        "containerWeight": 100,
-        "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
-        "margin": [4, 8, 4, 4],
-        "marginInPixel": false,
-        "padding": [0, 0, 0, 0],
-        "paddingInPixel": false,
-        "referenceHeight": 35,
-        "widgetAlignment": constants.WIDGET_ALIGN_CENTER
-    }, {
-        "glossyEffect": constants.IMAGE_GLOSSY_EFFECT_LINEAR
-    });
-    var lblTitle = new kony.ui.Label({
-        "id": "lblTitle",
+        "layoutType": kony.flex.FLOW_VERTICAL,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "0dp",
+        "width": "100%",
+        "zIndex": 1
+    }, {}, {});
+    FlexContainer03de438e5fa574e.setDefaultUnit(kony.flex.DP);
+    var FlexContainer06dc7ef4d4a494b = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "70%",
+        "id": "FlexContainer06dc7ef4d4a494b",
         "isVisible": true,
-        "text": "Kony Template"
-    }, {
-        "containerWeight": 100,
-        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
-        "hExpand": true,
-        "margin": [1, 2, 1, 1],
-        "marginInPixel": false,
-        "padding": [0, 0, 0, 0],
-        "paddingInPixel": false,
-        "vExpand": false,
-        "widgetAlignment": constants.WIDGET_ALIGN_CENTER
-    }, {
-        "textCopyable": false,
-        "wrapping": constants.WIDGET_TEXT_WORD_WRAP
-    });
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "0dp",
+        "width": "100%",
+        "zIndex": 1
+    }, {}, {});
+    FlexContainer06dc7ef4d4a494b.setDefaultUnit(kony.flex.DP);
     var txtEmail = new kony.ui.TextBox2({
         "autoCapitalize": constants.TEXTBOX_AUTO_CAPITALIZE_NONE,
-        "focusSkin": "sknTxtTransparent",
+        "centerX": "50%",
+        "height": "40dp",
         "id": "txtEmail",
         "isVisible": true,
         "keyBoardStyle": constants.TEXTBOX_KEY_BOARD_STYLE_EMAIL,
+        "left": "42dp",
         "placeholder": "Email",
         "secureTextEntry": false,
-        "skin": "sknTxtTransparent",
-        "textInputMode": constants.TEXTBOX_INPUT_MODE_ANY
+        "skin": "slTextBox",
+        "textInputMode": constants.TEXTBOX_INPUT_MODE_ANY,
+        "top": "67dp",
+        "width": "260dp"
     }, {
         "containerHeightMode": constants.TEXTBOX_FONT_METRICS_DRIVEN_HEIGHT,
-        "containerHeightReference": constants.CONTAINER_HEIGHT_BY_FORM_REFERENCE,
-        "containerWeight": 100,
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "hExpand": true,
-        "margin": [0, 3, 0, 0],
-        "marginInPixel": false,
-        "padding": [8, 6, 6, 2],
-        "paddingInPixel": false,
-        "widgetAlignment": constants.WIDGET_ALIGN_CENTER
-    }, {
-        "autoCorrect": false,
-        "keyboardActionLabel": constants.TEXTBOX_KEYBOARD_LABEL_NEXT,
-        "pasteboardType": constants.TEXTBOX_PASTE_BOARD_TYPE_NO_PASTE_BOARD,
-        "placeholderSkin": "sknPlaceholder",
-        "showClearButton": true,
-        "showCloseButton": true,
-        "showProgressIndicator": true,
-        "viewType": constants.TEXTBOX_VIEW_TYPE_DEFAULT
-    });
-    var Line0131c0493207443 = new kony.ui.Line({
-        "id": "Line0131c0493207443",
-        "isVisible": true,
-        "skin": "CopynoSkinLine05917fcd6d5e94c"
-    }, {
-        "margin": [5, 1, 5, 0],
-        "marginInPixel": false,
-        "thickness": 1
-    }, {});
-    var txtMobile = new kony.ui.TextBox2({
-        "autoCapitalize": constants.TEXTBOX_AUTO_CAPITALIZE_NONE,
-        "focusSkin": "sknTxtTransparent",
-        "id": "txtMobile",
-        "isVisible": true,
-        "keyBoardStyle": constants.TEXTBOX_KEY_BOARD_STYLE_PHONE_PAD,
-        "maxTextLength": 10,
-        "placeholder": "Mobile",
-        "secureTextEntry": false,
-        "skin": "sknTxtTransparent",
-        "textInputMode": constants.TEXTBOX_INPUT_MODE_NUMERIC
-    }, {
-        "containerHeightMode": constants.TEXTBOX_FONT_METRICS_DRIVEN_HEIGHT,
-        "containerHeightReference": constants.CONTAINER_HEIGHT_BY_FORM_REFERENCE,
-        "containerWeight": 100,
-        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "hExpand": true,
-        "margin": [0, 0, 0, 0],
-        "marginInPixel": false,
-        "padding": [8, 6, 6, 2],
-        "paddingInPixel": false,
-        "widgetAlignment": constants.WIDGET_ALIGN_CENTER
-    }, {
-        "autoCorrect": false,
-        "keyboardActionLabel": constants.TEXTBOX_KEYBOARD_LABEL_NEXT,
-        "pasteboardType": constants.TEXTBOX_PASTE_BOARD_TYPE_NO_PASTE_BOARD,
-        "placeholderSkin": "sknPlaceholder",
-        "showClearButton": true,
-        "showCloseButton": true,
-        "showProgressIndicator": true,
-        "viewType": constants.TEXTBOX_VIEW_TYPE_DEFAULT
-    });
-    var Line05a267c10ddf04e = new kony.ui.Line({
-        "id": "Line05a267c10ddf04e",
-        "isVisible": true,
-        "skin": "CopynoSkinLine05917fcd6d5e94c"
-    }, {
-        "margin": [5, 1, 5, 0],
-        "marginInPixel": false,
-        "thickness": 1
-    }, {});
-    var txtPassword = new kony.ui.TextBox2({
-        "autoCapitalize": constants.TEXTBOX_AUTO_CAPITALIZE_NONE,
-        "focusSkin": "sknTxtTransparent",
-        "id": "txtPassword",
-        "isVisible": true,
-        "keyBoardStyle": constants.TEXTBOX_KEY_BOARD_STYLE_DEFAULT,
-        "placeholder": "Password",
-        "secureTextEntry": true,
-        "skin": "sknTxtTransparent",
-        "textInputMode": constants.TEXTBOX_INPUT_MODE_ANY
-    }, {
-        "containerHeightMode": constants.TEXTBOX_FONT_METRICS_DRIVEN_HEIGHT,
-        "containerHeightReference": constants.CONTAINER_HEIGHT_BY_FORM_REFERENCE,
-        "containerWeight": 100,
-        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "hExpand": true,
-        "margin": [0, 0, 0, 0],
-        "marginInPixel": false,
-        "padding": [8, 6, 6, 2],
-        "paddingInPixel": false,
-        "widgetAlignment": constants.WIDGET_ALIGN_CENTER
+        "padding": [3, 0, 0, 0],
+        "paddingInPixel": false
     }, {
         "autoCorrect": false,
         "keyboardActionLabel": constants.TEXTBOX_KEYBOARD_LABEL_DONE,
-        "pasteboardType": constants.TEXTBOX_PASTE_BOARD_TYPE_NO_PASTE_BOARD,
-        "placeholderSkin": "sknPlaceholder",
         "showClearButton": true,
         "showCloseButton": true,
         "showProgressIndicator": true,
         "viewType": constants.TEXTBOX_VIEW_TYPE_DEFAULT
     });
-    var Line0e109d319292241 = new kony.ui.Line({
-        "id": "Line0e109d319292241",
+    var txtPassword = new kony.ui.TextBox2({
+        "autoCapitalize": constants.TEXTBOX_AUTO_CAPITALIZE_NONE,
+        "centerX": "50%",
+        "height": "40dp",
+        "id": "txtPassword",
         "isVisible": true,
-        "skin": "CopynoSkinLine05917fcd6d5e94c"
+        "keyBoardStyle": constants.TEXTBOX_KEY_BOARD_STYLE_DEFAULT,
+        "left": "41dp",
+        "placeholder": "Password",
+        "secureTextEntry": true,
+        "skin": "slTextBox",
+        "textInputMode": constants.TEXTBOX_INPUT_MODE_ANY,
+        "top": "120dp",
+        "width": "260dp",
+        "zIndex": 1
     }, {
-        "margin": [5, 1, 5, 0],
-        "marginInPixel": false,
-        "thickness": 1
-    }, {});
-    var btnLogin = new kony.ui.Button({
-        "focusSkin": "sknButtonBlue",
-        "id": "btnLogin",
+        "containerHeightMode": constants.TEXTBOX_FONT_METRICS_DRIVEN_HEIGHT,
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [3, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "autoCorrect": false,
+        "keyboardActionLabel": constants.TEXTBOX_KEYBOARD_LABEL_DONE,
+        "showClearButton": true,
+        "showCloseButton": true,
+        "showProgressIndicator": true,
+        "viewType": constants.TEXTBOX_VIEW_TYPE_DEFAULT
+    });
+    var Button01ecb6c0c852646 = new kony.ui.Button({
+        "focusSkin": "slButtonGlossRed",
+        "height": "50dp",
+        "id": "Button01ecb6c0c852646",
         "isVisible": true,
-        "onClick": p2kwiet120482477619_btnLogin_onClick_seq0,
-        "skin": "sknButtonBlue",
-        "text": "LOGIN"
+        "left": "58dp",
+        "onClick": AS_Button_f3855abb3b464ff5a595cfd745eec005,
+        "skin": "CopyslButtonGlossBlue01763c2c96ba941",
+        "text": "Login",
+        "top": "210dp",
+        "width": "260dp",
+        "zIndex": 1
     }, {
-        "containerWeight": 100,
         "contentAlignment": constants.CONTENT_ALIGN_CENTER,
         "displayText": true,
-        "hExpand": true,
-        "margin": [18, 10, 18, 7],
-        "marginInPixel": false,
-        "padding": [1, 4, 1, 4],
-        "paddingInPixel": false,
-        "vExpand": false,
-        "widgetAlignment": constants.WIDGET_ALIGN_CENTER
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
     }, {
-        "glowEffect": false,
         "showProgressIndicator": true
     });
-    var HBoxRememberMe = new kony.ui.Box({
-        "id": "HBoxRememberMe",
+    var CopyButton09a24aed5924741 = new kony.ui.Button({
+        "focusSkin": "slButtonGlossRed",
+        "height": "50dp",
+        "id": "CopyButton09a24aed5924741",
         "isVisible": true,
-        "orientation": constants.BOX_LAYOUT_HORIZONTAL,
-        "position": constants.BOX_POSITION_AS_NORMAL
+        "left": "58dp",
+        "skin": "CopyslButtonGlossBlue015902fd302bd41",
+        "text": "Register",
+        "top": "325dp",
+        "width": "260dp",
+        "zIndex": 1
     }, {
-        "containerWeight": 100,
-        "layoutAlignment": constants.BOX_LAYOUT_ALIGN_FROM_LEFT,
-        "layoutType": constants.CONTAINER_LAYOUT_BOX,
-        "margin": [0, 0, 0, 1],
-        "marginInPixel": false,
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "displayText": true,
         "padding": [0, 0, 0, 0],
-        "paddingInPixel": false,
-        "percent": true,
-        "vExpand": false,
-        "widgetAlignment": constants.WIDGET_ALIGN_CENTER
-    }, {});
-    var vboxRememberMe = new kony.ui.Box({
-        "id": "vboxRememberMe",
+        "paddingInPixel": false
+    }, {
+        "showProgressIndicator": true
+    });
+    var Label05b229a7bc00a4b = new kony.ui.Label({
+        "centerX": "49.96%",
+        "id": "Label05b229a7bc00a4b",
         "isVisible": true,
-        "onClick": p2kwiet120482477619_vboxRememberMe_onClick_seq0,
-        "orientation": constants.BOX_LAYOUT_VERTICAL,
-        "position": constants.BOX_POSITION_AS_NORMAL
+        "left": "140dp",
+        "skin": "CopyslLabel0fce4dce149cb4d",
+        "text": "Forgot Password",
+        "top": "286dp",
+        "width": "40%",
+        "zIndex": 1
     }, {
-        "containerWeight": 100,
-        "layoutType": constants.CONTAINER_LAYOUT_BOX,
-        "margin": [0, 0, 0, 0],
-        "marginInPixel": false,
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
         "padding": [0, 0, 0, 0],
-        "paddingInPixel": false,
-        "vExpand": false,
-        "widgetAlignment": constants.WIDGET_ALIGN_CENTER
-    }, {});
-    var hboxLblRememberMe = new kony.ui.Box({
-        "id": "hboxLblRememberMe",
-        "isVisible": true,
-        "orientation": constants.BOX_LAYOUT_HORIZONTAL,
-        "position": constants.BOX_POSITION_AS_NORMAL
-    }, {
-        "containerWeight": 100,
-        "layoutAlignment": constants.BOX_LAYOUT_ALIGN_FROM_LEFT,
-        "layoutType": constants.CONTAINER_LAYOUT_BOX,
-        "margin": [0, 0, 0, 0],
-        "marginInPixel": false,
-        "padding": [0, 0, 0, 0],
-        "paddingInPixel": false,
-        "percent": true,
-        "vExpand": false,
-        "widgetAlignment": constants.WIDGET_ALIGN_CENTER
-    }, {});
-    var lblRememberMe = new kony.ui.Label({
-        "id": "lblRememberMe",
-        "isVisible": true,
-        "text": "Remember Me"
-    }, {
-        "containerWeight": 57,
-        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_RIGHT,
-        "hExpand": true,
-        "margin": [1, 1, 1, 1],
-        "marginInPixel": false,
-        "padding": [0, 0, 0, 0],
-        "paddingInPixel": false,
-        "vExpand": false,
-        "widgetAlignment": constants.WIDGET_ALIGN_MIDDLE_RIGHT
+        "paddingInPixel": false
     }, {
         "textCopyable": false,
         "wrapping": constants.WIDGET_TEXT_WORD_WRAP
     });
-    var vBoxImgRememberMe = new kony.ui.Box({
-        "id": "vBoxImgRememberMe",
+    FlexContainer06dc7ef4d4a494b.add(txtEmail, txtPassword, Button01ecb6c0c852646, CopyButton09a24aed5924741, Label05b229a7bc00a4b);
+    var flexBoxFooter = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "bottom": 0,
+        "clipBounds": true,
+        "height": 140,
+        "id": "flexBoxFooter",
         "isVisible": true,
-        "onClick": p2kwiet120482477619_vBoxImgRememberMe_onClick_seq0,
-        "orientation": constants.BOX_LAYOUT_VERTICAL,
-        "position": constants.BOX_POSITION_AS_NORMAL
-    }, {
-        "containerWeight": 43,
-        "layoutType": constants.CONTAINER_LAYOUT_BOX,
-        "margin": [0, 0, 0, 0],
-        "marginInPixel": false,
-        "padding": [0, 0, 0, 0],
-        "paddingInPixel": false,
-        "vExpand": false,
-        "widgetAlignment": constants.WIDGET_ALIGN_CENTER
-    }, {});
-    var imgRememberMe = new kony.ui.Image2({
-        "id": "imgRememberMe",
+        "layoutType": kony.flex.FLOW_VERTICAL,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "2%",
+        "width": "100%"
+    }, {}, {});
+    flexBoxFooter.setDefaultUnit(kony.flex.DP);
+    var flexSocialButtons = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "bottom": "1%",
+        "clipBounds": true,
+        "height": "49%",
+        "id": "flexSocialButtons",
         "isVisible": true,
-        "src": "icon_check.png"
+        "layoutType": kony.flex.FLOW_HORIZONTAL,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "0dp",
+        "width": "100%"
+    }, {}, {});
+    flexSocialButtons.setDefaultUnit(kony.flex.DP);
+    var CopyFlexContainer0b9de7f44ab4145 = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "100%",
+        "id": "CopyFlexContainer0b9de7f44ab4145",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_VERTICAL,
+        "left": "3%",
+        "skin": "CopyslFbox01e119060c68645",
+        "top": "0dp",
+        "width": "22%"
+    }, {}, {});
+    CopyFlexContainer0b9de7f44ab4145.setDefaultUnit(kony.flex.DP);
+    var CopyImage0841740ee407a43 = new kony.ui.Image2({
+        "centerX": "50%",
+        "height": "50%",
+        "id": "CopyImage0841740ee407a43",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "slImage",
+        "src": "icon_check.png",
+        "top": 0,
+        "width": kony.flex.USE_PREFFERED_SIZE
     }, {
-        "containerWeight": 100,
         "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
-        "margin": [2, 0, 0, 0],
-        "marginInPixel": false,
         "padding": [0, 0, 0, 0],
-        "paddingInPixel": false,
-        "referenceHeight": 20,
-        "widgetAlignment": constants.WIDGET_ALIGN_TOP_LEFT
-    }, {
-        "glossyEffect": constants.IMAGE_GLOSSY_EFFECT_DEFAULT
-    });
-    vBoxImgRememberMe.add(imgRememberMe);
-    hboxLblRememberMe.add(lblRememberMe, vBoxImgRememberMe);
-    vboxRememberMe.add(hboxLblRememberMe);
-    HBoxRememberMe.add(vboxRememberMe);
-    var hBoxForgotPwd = new kony.ui.Box({
-        "id": "hBoxForgotPwd",
-        "isVisible": true,
-        "orientation": constants.BOX_LAYOUT_HORIZONTAL,
-        "position": constants.BOX_POSITION_AS_NORMAL,
-        "skin": "slHbox"
-    }, {
-        "containerWeight": 100,
-        "layoutType": constants.CONTAINER_LAYOUT_BOX,
-        "margin": [0, 2, 0, 0],
-        "marginInPixel": false,
-        "padding": [0, 0, 0, 0],
-        "paddingInPixel": false,
-        "percent": true,
-        "vExpand": false,
-        "widgetAlignment": constants.WIDGET_ALIGN_BOTTOM_RIGHT
+        "paddingInPixel": false
     }, {});
-    var lblBlank = new kony.ui.Label({
-        "id": "lblBlank",
+    var CopyLabel07e0dabb638d84a = new kony.ui.Label({
+        "height": "50%",
+        "id": "CopyLabel07e0dabb638d84a",
         "isVisible": true,
-        "skin": "slLabel"
+        "left": "0dp",
+        "skin": "CopyslLabel0332856b8a8da4f",
+        "text": "Label",
+        "top": "0dp",
+        "width": "100%",
+        "zIndex": 1
     }, {
-        "containerWeight": 64,
-        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "hExpand": true,
-        "margin": [1, 1, 1, 1],
-        "marginInPixel": false,
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
         "padding": [0, 0, 0, 0],
-        "paddingInPixel": false,
-        "vExpand": false,
-        "widgetAlignment": constants.WIDGET_ALIGN_CENTER
+        "paddingInPixel": false
     }, {
         "textCopyable": false,
         "wrapping": constants.WIDGET_TEXT_WORD_WRAP
     });
-    var linkForgotPassword = new kony.ui.Link({
-        "focusSkin": "sknLinkBlue",
-        "id": "linkForgotPassword",
+    CopyFlexContainer0b9de7f44ab4145.add(CopyImage0841740ee407a43, CopyLabel07e0dabb638d84a);
+    var CopyFlexContainer032d61b33af5f40 = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "100%",
+        "id": "CopyFlexContainer032d61b33af5f40",
         "isVisible": true,
-        "onClick": AS_Link_0abdbf95f2c842d08e34e8705506c4d4,
-        "skin": "sknLinkBlue",
-        "text": "Forgot Password"
+        "layoutType": kony.flex.FLOW_VERTICAL,
+        "left": "2%",
+        "skin": "CopyslFbox01e119060c68645",
+        "top": "0dp",
+        "width": "22%"
+    }, {}, {});
+    CopyFlexContainer032d61b33af5f40.setDefaultUnit(kony.flex.DP);
+    var CopyImage0e7f92edb10b440 = new kony.ui.Image2({
+        "centerX": "50%",
+        "height": "50%",
+        "id": "CopyImage0e7f92edb10b440",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "slImage",
+        "src": "icon_check.png",
+        "top": 0,
+        "width": kony.flex.USE_PREFFERED_SIZE
     }, {
-        "containerWeight": 36,
-        "contentAlignment": constants.CONTENT_ALIGN_BOTTOM_RIGHT,
-        "hExpand": true,
-        "margin": [0, 0, 5, 0],
-        "marginInPixel": false,
+        "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
         "padding": [0, 0, 0, 0],
-        "paddingInPixel": false,
-        "widgetAlignment": constants.WIDGET_ALIGN_BOTTOM_RIGHT
+        "paddingInPixel": false
+    }, {});
+    var CopyLabel0f0cc5a34c91343 = new kony.ui.Label({
+        "height": "50%",
+        "id": "CopyLabel0f0cc5a34c91343",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "CopyslLabel0332856b8a8da4f",
+        "text": "Label",
+        "top": "0dp",
+        "width": "100%",
+        "zIndex": 1
     }, {
-        "showProgressIndicator": true
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "textCopyable": false,
+        "wrapping": constants.WIDGET_TEXT_WORD_WRAP
     });
-    hBoxForgotPwd.add(lblBlank, linkForgotPassword);
-    frmLogin.add(imgLogo, lblTitle, txtEmail, Line0131c0493207443, txtMobile, Line05a267c10ddf04e, txtPassword, Line0e109d319292241, btnLogin, HBoxRememberMe, hBoxForgotPwd);
+    CopyFlexContainer032d61b33af5f40.add(CopyImage0e7f92edb10b440, CopyLabel0f0cc5a34c91343);
+    var CopyFlexContainer045dc28f1ab6e49 = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "100%",
+        "id": "CopyFlexContainer045dc28f1ab6e49",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_VERTICAL,
+        "left": "2%",
+        "skin": "CopyslFbox01e119060c68645",
+        "top": "0dp",
+        "width": "22%"
+    }, {}, {});
+    CopyFlexContainer045dc28f1ab6e49.setDefaultUnit(kony.flex.DP);
+    var CopyImage04535f57ba15049 = new kony.ui.Image2({
+        "centerX": "50%",
+        "height": "50%",
+        "id": "CopyImage04535f57ba15049",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "slImage",
+        "src": "icon_check.png",
+        "top": 0,
+        "width": kony.flex.USE_PREFFERED_SIZE
+    }, {
+        "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    var CopyLabel04d1b91500a1545 = new kony.ui.Label({
+        "height": "50%",
+        "id": "CopyLabel04d1b91500a1545",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "CopyslLabel0332856b8a8da4f",
+        "text": "Label",
+        "top": "0dp",
+        "width": "100%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "textCopyable": false,
+        "wrapping": constants.WIDGET_TEXT_WORD_WRAP
+    });
+    CopyFlexContainer045dc28f1ab6e49.add(CopyImage04535f57ba15049, CopyLabel04d1b91500a1545);
+    var CopyFlexContainer0076e73e737f64d = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "100%",
+        "id": "CopyFlexContainer0076e73e737f64d",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_VERTICAL,
+        "left": "2%",
+        "skin": "CopyslFbox01e119060c68645",
+        "top": "0dp",
+        "width": "22%"
+    }, {}, {});
+    CopyFlexContainer0076e73e737f64d.setDefaultUnit(kony.flex.DP);
+    var CopyImage0cbf575a32d4442 = new kony.ui.Image2({
+        "centerX": "50%",
+        "height": "50%",
+        "id": "CopyImage0cbf575a32d4442",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "slImage",
+        "src": "icon_check.png",
+        "top": 0,
+        "width": kony.flex.USE_PREFFERED_SIZE
+    }, {
+        "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    var CopyLabel0b12f35373f7241 = new kony.ui.Label({
+        "height": "50%",
+        "id": "CopyLabel0b12f35373f7241",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "CopyslLabel0332856b8a8da4f",
+        "text": "Label",
+        "top": "0dp",
+        "width": "100%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "textCopyable": false,
+        "wrapping": constants.WIDGET_TEXT_WORD_WRAP
+    });
+    CopyFlexContainer0076e73e737f64d.add(CopyImage0cbf575a32d4442, CopyLabel0b12f35373f7241);
+    flexSocialButtons.add(CopyFlexContainer0b9de7f44ab4145, CopyFlexContainer032d61b33af5f40, CopyFlexContainer045dc28f1ab6e49, CopyFlexContainer0076e73e737f64d);
+    var flexCopyright = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "bottom": "0%",
+        "clipBounds": true,
+        "height": "47%",
+        "id": "flexCopyright",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_HORIZONTAL,
+        "left": "0%",
+        "right": "0%",
+        "skin": "slFbox",
+        "top": "3%",
+        "width": "100%"
+    }, {}, {});
+    flexCopyright.setDefaultUnit(kony.flex.DP);
+    var FlexContainer05097c80182204d = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "bottom": "0%",
+        "clipBounds": true,
+        "height": "100%",
+        "id": "FlexContainer05097c80182204d",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_HORIZONTAL,
+        "left": "3%",
+        "right": "3%",
+        "skin": "slFbox",
+        "top": "0%",
+        "width": "94%"
+    }, {}, {});
+    FlexContainer05097c80182204d.setDefaultUnit(kony.flex.DP);
+    var FlexContainer0bf6527be8edc4f = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "100%",
+        "id": "FlexContainer0bf6527be8edc4f",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "0dp",
+        "skin": "CopyslFbox01e119060c68645",
+        "top": "0dp",
+        "width": "100%"
+    }, {}, {});
+    FlexContainer0bf6527be8edc4f.setDefaultUnit(kony.flex.DP);
+    var Image0b6bb3101240649 = new kony.ui.Image2({
+        "height": "50%",
+        "id": "Image0b6bb3101240649",
+        "isVisible": true,
+        "left": "20%",
+        "skin": "slImage",
+        "src": "icon_check.png",
+        "top": "0dp",
+        "width": kony.flex.USE_PREFFERED_SIZE
+    }, {
+        "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    var CopyImage05336b1d8737c49 = new kony.ui.Image2({
+        "height": "50%",
+        "id": "CopyImage05336b1d8737c49",
+        "isVisible": true,
+        "right": "20%",
+        "skin": "slImage",
+        "src": "icon_check.png",
+        "top": "0dp",
+        "width": kony.flex.USE_PREFFERED_SIZE
+    }, {
+        "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    var Label00661b20d66cf4e = new kony.ui.Label({
+        "height": "50%",
+        "id": "Label00661b20d66cf4e",
+        "isVisible": true,
+        "left": "50%",
+        "skin": "CopyslLabel0332856b8a8da4f",
+        "text": "Label",
+        "top": "50%",
+        "width": "50%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "textCopyable": false,
+        "wrapping": constants.WIDGET_TEXT_WORD_WRAP
+    });
+    var CopyLabel03fd4ef465d9a48 = new kony.ui.Label({
+        "height": "50%",
+        "id": "CopyLabel03fd4ef465d9a48",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "CopyslLabel0332856b8a8da4f",
+        "text": "Label",
+        "top": "50%",
+        "width": "50%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "textCopyable": false,
+        "wrapping": constants.WIDGET_TEXT_WORD_WRAP
+    });
+    var FlexContainer0edfd4fe8a07b42 = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "centerY": "50%",
+        "clipBounds": true,
+        "height": "60%",
+        "id": "FlexContainer0edfd4fe8a07b42",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "50%",
+        "skin": "CopyslFbox033ff03d29a1e43",
+        "top": "0%",
+        "width": "0.50%",
+        "zIndex": 1
+    }, {}, {});
+    FlexContainer0edfd4fe8a07b42.setDefaultUnit(kony.flex.DP);
+    FlexContainer0edfd4fe8a07b42.add();
+    FlexContainer0bf6527be8edc4f.add(Image0b6bb3101240649, CopyImage05336b1d8737c49, Label00661b20d66cf4e, CopyLabel03fd4ef465d9a48, FlexContainer0edfd4fe8a07b42);
+    FlexContainer05097c80182204d.add(FlexContainer0bf6527be8edc4f);
+    flexCopyright.add(FlexContainer05097c80182204d);
+    flexBoxFooter.add(flexSocialButtons, flexCopyright);
+    FlexContainer03de438e5fa574e.add(FlexContainer06dc7ef4d4a494b, flexBoxFooter);
+    frmLogin.add(FlexContainer03de438e5fa574e);
 };
 
 function frmLoginGlobals() {
     frmLogin = new kony.ui.Form2({
         "addWidgets": addWidgetsfrmLogin,
-        "bounces": true,
+        "allowHorizontalBounce": false,
+        "allowVerticalBounce": false,
+        "enableScrolling": false,
         "enabledForIdleTimeout": false,
-        "headers": [hBoxHeaderNoOption],
+        "headers": [flxContainerNoOption],
         "id": "frmLogin",
-        "init": AS_Form_b96de85f9589402195a817e2b9032843,
-        "needAppMenu": false,
-        "postShow": p2kwiet120482477619_frmLogin_postshow_seq0,
-        "preShow": p2kwiet120482477619_frmLogin_preshow_seq0,
-        "skin": "sknWhiteBackground"
+        "init": AS_Form_6d9892a1c9604296a5cd04773f4904b1,
+        "layoutType": kony.flex.FLOW_VERTICAL,
+        "needAppMenu": true,
+        "postShow": AS_Form_a763c435a8874298a41f3d4c56024164,
+        "preShow": AS_Form_3d5d406272d34ed29f9dd02ec6949b76,
+        "skin": "slForm"
     }, {
-        "displayOrientation": constants.FORM_DISPLAY_ORIENTATION_BOTH,
-        "layoutType": constants.CONTAINER_LAYOUT_BOX,
+        "displayOrientation": constants.FORM_DISPLAY_ORIENTATION_PORTRAIT,
+        "layoutType": kony.flex.FLOW_VERTICAL,
         "padding": [0, 0, 0, 0],
         "paddingInPixel": false
     }, {
-        "bounces": true,
         "configureExtendBottom": false,
         "configureExtendTop": false,
         "configureStatusBarStyle": false,
-        "extendBottom": false,
-        "extendTop": false,
         "footerOverlap": false,
-        "formTransparencyDuringPostShow": 100,
+        "formTransparencyDuringPostShow": "100",
         "headerOverlap": false,
-        "inputAccessoryViewType": constants.FORM_INPUTACCESSORYVIEW_DEFAULT,
-        "inTransitionConfig": {
-            "transitionDirection": "none",
-            "transitionEffect": "none"
-        },
-        "needsIndicatorDuringPostShow": true,
-        "outTransitionConfig": {
-            "transitionDirection": "none",
-            "transitionEffect": "none"
-        },
+        "inputAccessoryViewType": constants.FORM_INPUTACCESSORYVIEW_CANCEL,
+        "needsIndicatorDuringPostShow": false,
         "retainScrollPosition": false,
-        "statusBarStyle": constants.STATUS_BAR_STYLE_DEFAULT,
-        "titleBar": false
+        "titleBar": false,
+        "titleBarSkin": "slTitleBar"
     });
     frmLogin.info = {
-        "kuid": "p2kwiet120482477619"
+        "kuid": "36f5225924db42d387dd619732bc21b3"
     };
 };

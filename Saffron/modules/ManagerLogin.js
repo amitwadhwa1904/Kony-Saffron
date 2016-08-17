@@ -58,7 +58,7 @@ function LoginManager(){
 		if(this.login == null){
 			appscore.dao.remove("Creds");
 		}else{
-          	if(gRememberMe_Support && frmLogin.imgRememberMe.src == IMG_SRC_CHECK){
+          	if(gRememberMe_Support){
               	appscore.dao.update("Creds", this.buildForStorage());
             }
 		}
@@ -67,7 +67,6 @@ function LoginManager(){
   	this.buildForStorage = function(){
       	return {
           	"email":this.login.email,
-          	"mobile":this.login.mobile,
           	"token":this.login.token
         };
     };

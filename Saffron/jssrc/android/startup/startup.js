@@ -122,16 +122,18 @@ sessionID = "";
 function appInit(params) {
     skinsInit();
     initializeflxhdrWithNoOption();
+    initializeflxhdrWithThreeOptions();
     initializeflxhdrWithTwoOptions();
     initializehdrWithBackOption();
     initializehdrWithNoOption();
     initializehdrWithTwoOptions();
-    initializelxhdrWithThreeOptions();
-    Form08b5c72c3b48248Globals();
     frmForgotPasswordGlobals();
     frmHomeGlobals();
+    frmHome1Globals();
     frmLoginGlobals();
+    frmLogin1Globals();
     frmSplashGlobals();
+    MenuFormGlobals();
     setAppBehaviors();
 };
 
@@ -152,13 +154,16 @@ function themeCallBack() {
         init: appInit,
         postappinit: AS_AppEvents_06113dfd1e1f409cb9b10f462d0e6efc,
         showstartupform: function() {
-            Form08b5c72c3b48248.show();
+            frmLogin.show();
         }
     });
 };
 
 function loadResources() {
     globalhttpheaders = {};
+    kony.os.loadLibrary({
+        "javaclassname": "com.konylabs.ffi.N_ganalytics"
+    });
     sdkInitConfig = {
         "appConfig": appConfig,
         "isMFApp": appConfig.isMFApp,

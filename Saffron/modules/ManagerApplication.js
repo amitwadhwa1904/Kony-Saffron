@@ -21,6 +21,8 @@ var gDebug = true;
 var gRememberMe_Support = true;
 
 
+var googleAnalytics = null;
+
 /**
  * Callback object for handling App foreground and App background methods
  */
@@ -32,6 +34,7 @@ var callbacksObj = {onbackground:onAppBackground,onforeground:onAppForeground};
    */
 function application_post_init(){
   	appscore.print.start();
+  //	googleAnalytics = new ganalytics.GAnalyticsLib("dsfhjdfhsdhskh"); //UA-80818309-1 for MyPower
 	kony.application.setApplicationCallbacks(callbacksObj);
 	if(loginManager.getLogin() != null){
 		// Validate token
@@ -74,4 +77,25 @@ function onAppForeground() {
 	appscore.print.start();
 
   	appscore.print.stop();
+}
+
+
+
+function getformTrackerName(){
+	switch (kony.application.getCurrentForm().id) {
+	case "FormPowerOutageBrowser":
+		return "Power Outage"
+		break;
+	case "FormAboutUs2":
+		return "About Us"
+		break;
+	default:
+		return kony.application.getCurrentForm().id;
+		break;
+	}
+}
+
+// call this below method in every postshow
+function trackForm(){
+	googleAnalytics.trackForm(getformTrackerName());
 }

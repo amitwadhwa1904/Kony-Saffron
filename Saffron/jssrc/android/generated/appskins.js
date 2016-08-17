@@ -5,6 +5,8 @@ function skinsInit() {
     CopysknTxtTransparent01b6187a3f3af47 = "CopysknTxtTransparent01b6187a3f3af47";
     CopysknTxtTransparent09c5e703dd67040 = "CopysknTxtTransparent09c5e703dd67040";
     CopysknTxtTransparent0faaf836423a243 = "CopysknTxtTransparent0faaf836423a243";
+    CopyslButtonGlossBlue015902fd302bd41 = "CopyslButtonGlossBlue015902fd302bd41";
+    CopyslButtonGlossBlue01763c2c96ba941 = "CopyslButtonGlossBlue01763c2c96ba941";
     CopyslButtonGlossBlue0af9d9514d13c4c = "CopyslButtonGlossBlue0af9d9514d13c4c";
     CopyslFbox01e119060c68645 = "CopyslFbox01e119060c68645";
     CopyslFbox033ff03d29a1e43 = "CopyslFbox033ff03d29a1e43";
@@ -15,7 +17,9 @@ function skinsInit() {
     CopyslLabel07953ad2f2e514d = "CopyslLabel07953ad2f2e514d";
     CopyslLabel08e26d59f60544e = "CopyslLabel08e26d59f60544e";
     CopyslLabel0fadfeb7e6a1349 = "CopyslLabel0fadfeb7e6a1349";
+    CopyslLabel0fce4dce149cb4d = "CopyslLabel0fce4dce149cb4d";
     CopyslLink088cd7dbeaf434c = "CopyslLink088cd7dbeaf434c";
+    CopyslRichText01dafd406fa6d4c = "CopyslRichText01dafd406fa6d4c";
     btnFocus = "btnFocus";
     btnNormal = "btnNormal";
     calFocus = "calFocus";
@@ -75,8 +79,10 @@ function skinsInit() {
     slLabel = "slLabel";
     slLink = "slLink";
     slPopup = "slPopup";
+    slRichText = "slRichText";
     slStaticNotificationForm = "slStaticNotificationForm";
     slTab = "slTab";
+    slTextBox = "slTextBox";
     slTitleBar = "slTitleBar";
     slVbox = "slVbox";
     slWatchForm = "slWatchForm";

@@ -1,0 +1,32 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        4,
+        4,
+        4,
+        4
+    ],
+    "_skin_": "s7a12500a1ef45268e0d6147c8903853",
+    "_text_": "Button",
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s3ee38a8593f47f48ac311d7ef2ae1ad",
+    "id": "Button012771e9387b74b",
+    "ide_onClick": "AS_Button_d132486b95844d1abb452fa5fa1c6b8e",
+    "info": null,
+    "isvisible": true,
+    "kuid": "ea27af8bbfd7487580a112409779df02",
+    "name": "kony.ui.Button",
+    "parent": "frmLogin1",
+    "pf": "frmLogin1",
+    "wType": "Button"
+}

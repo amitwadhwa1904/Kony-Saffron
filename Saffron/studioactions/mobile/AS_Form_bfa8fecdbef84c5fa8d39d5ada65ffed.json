@@ -7,18 +7,21 @@
             "name": "eventobject"
         }],
         "contextObj": {
-            "name": "Form08b5c72c3b48248",
+            "name": "frmHome",
             "type": "forms",
             "platform": null,
             "KUID": "979e555fb19d4cd7a7ffcaf53cf45019"
         },
         "language": "js",
         "actions": [{
-            "id": "ADD_SNIPPET__861450809caa42c786237637f963cec3",
-            "type": "ADD_SNIPPET",
-            "codeSnippet": "Form08b5c72c3b48248.headers[0].lblHeader.text = \"mycaption\";",
+            "id": "INVOKE_FUNCTION___12ce04449a14465abc4bfcfbd78e8ef0",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "frmHome_preShow",
+            "display": "frmHome_preShow",
+            "inputparams": [],
             "parentId": null,
-            "callbackType": null
+            "callbackType": null,
+            "disabled": null
         }]
     }
 }

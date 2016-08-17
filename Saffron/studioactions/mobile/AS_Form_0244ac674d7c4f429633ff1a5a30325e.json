@@ -1,0 +1,26 @@
+{
+    "AS_Form_0244ac674d7c4f429633ff1a5a30325e": {
+        "id": "AS_Form_0244ac674d7c4f429633ff1a5a30325e",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmSplash",
+            "type": "forms",
+            "platform": "",
+            "KUID": "p2kwiet120482477621"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___62f5e96442e7486c87e4e001f573b64c",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "splashScreenCheck",
+            "display": "splashScreenCheck",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

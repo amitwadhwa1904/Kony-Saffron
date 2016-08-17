@@ -1,0 +1,26 @@
+{
+    "AS_Form_505fd00863f4448dbef9d9f7876131d7": {
+        "id": "AS_Form_505fd00863f4448dbef9d9f7876131d7",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmForgotPassword",
+            "type": "forms",
+            "platform": null,
+            "KUID": "713a5fb1981e40909236fd97942ab8de"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___aad77f91e9dd4798a2c1d2f02b3bb08c",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "frmForgotPassword_postShow",
+            "display": "frmForgotPassword_postShow",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

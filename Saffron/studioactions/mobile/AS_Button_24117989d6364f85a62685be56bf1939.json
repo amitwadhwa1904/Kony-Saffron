@@ -1,0 +1,26 @@
+{
+    "AS_Button_24117989d6364f85a62685be56bf1939": {
+        "id": "AS_Button_24117989d6364f85a62685be56bf1939",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmForgotPassword",
+            "type": "forms",
+            "platform": null,
+            "KUID": "713a5fb1981e40909236fd97942ab8de"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___7bbfbfc377614e32b22de26ef2de3f35",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "frmForgotPassword_SendEmailBtnClick",
+            "display": "frmForgotPassword_SendEmailBtnClick",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

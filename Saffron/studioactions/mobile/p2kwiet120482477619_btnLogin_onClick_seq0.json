@@ -1,0 +1,18 @@
+{
+    "p2kwiet120482477619_btnLogin_onClick_seq0": {
+        "id": "p2kwiet120482477619_btnLogin_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_6965612048247761261",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "frmLogin_onLoginBtnClick",
+            "display": "frmLogin_onLoginBtnClick",
+            "inputparams": []
+        }]
+    }
+}

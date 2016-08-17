@@ -1,0 +1,23 @@
+{
+    "AS_Form_3d5d406272d34ed29f9dd02ec6949b76": {
+        "id": "AS_Form_3d5d406272d34ed29f9dd02ec6949b76",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "CopyForm07ec76da338c545",
+            "type": "forms",
+            "platform": null,
+            "KUID": "36f5225924db42d387dd619732bc21b3"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_preShow_ab36ef84745b408c86e55aea318edc29",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "Form08b5c72c3b48248.headers[0].lblHeader.text = \"mycaption\";",
+            "callbackType": null
+        }]
+    }
+}

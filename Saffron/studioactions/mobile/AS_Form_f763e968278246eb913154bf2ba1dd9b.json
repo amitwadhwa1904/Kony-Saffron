@@ -1,0 +1,27 @@
+{
+    "AS_Form_f763e968278246eb913154bf2ba1dd9b": {
+        "id": "AS_Form_f763e968278246eb913154bf2ba1dd9b",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "neworientation"
+        }],
+        "contextObj": {
+            "name": "frmHome",
+            "type": "forms",
+            "platform": "",
+            "KUID": "p2kwiet12048247761"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__9247ef7aec9f4ca090d513848d4703b5",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "// do nothing",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

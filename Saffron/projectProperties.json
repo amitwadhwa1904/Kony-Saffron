@@ -1,0 +1,103 @@
+{
+    "wap_android_fontsize": "10",
+    "createdVizVersion": "7.0.0",
+    "watchos_longlooknotificationicon_42": "",
+    "wap_android240_fontsize": "10",
+    "supportedorientations": [
+        "portrait"
+    ],
+    "mwaddrkey": "192.168.30.51",
+    "watchos_notificationcentericon_38": "",
+    "iphoneipadglossyeffectkey": "false",
+    "wap_android640_fontsize": "19",
+    "createdgaversion": "6.5.0",
+    "winmobileguidkey": "",
+    "ide_appEvents": {
+        "mobile": {
+            "postappinit": "AS_AppEvents_06113dfd1e1f409cb9b10f462d0e6efc"
+        }
+    },
+    "desktopwebbasefontsize": "16",
+    "watchos_shortlooknotificationicon_42": "",
+    "wap_spaandroidtab_fontsize": "17",
+    "apppackagekey": "com.orgname.KonyTemplate",
+    "startupformkey": "Form08b5c72c3b48248",
+    "wap_bb440_fontsize": "12",
+    "wap_spaandroidtabldpi_fontsize": "17",
+    "isA11yConfigEnabled": false,
+    "wap_android480_fontsize": "16",
+    "winmangotiletitlekey": "KonyTemplate",
+    "extendTop": "false",
+    "desktopwebwidthval": "100",
+    "desktopwebwidthoption": "Percentage",
+    "wap_spawindowstab_fontsize": "12",
+    "wap_winphone320_fontsize": "12",
+    "defaulttheme": "defaultTheme",
+    "iphonebundleidentifierkey": "com.kony.KonyTemplate",
+    "ipadlandscapemodekey": "portrait",
+    "islocalserverurl": "false",
+    "watchos_longlooknotificationicon_38": "",
+    "spaandroidtabbasefontsize": "17",
+    "watchos_notificationcentericon_42": "",
+    "cloud_url": "https://appscore.konycloud.com",
+    "enableactionbar": false,
+    "appmenu": {
+        "tablet": {
+            "data": []
+        },
+        "wType": "Appmenu",
+        "desktop": {
+            "data": []
+        },
+        "mobile": {
+            "data": []
+        }
+    },
+    "wap_android360_fontsize": "13",
+    "desktopwebaligenmentoption": "left",
+    "pasteboardType": "2",
+    "spaipadbasefontsize": "17",
+    "appversionkey": "1.0.0",
+    "mwportkey": "80",
+    "wap_bb400_fontsize": "12",
+    "isNewAppWithRespectToAndroidPackageName": "true",
+    "extendBottom": "false",
+    "wap_spaandroidtabxhdpi_fontsize": "18",
+    "build": "debug",
+    "wap_android320_fontsize": "12",
+    "statusBarHidden": "false",
+    "wap_winphone480_fontsize": "12",
+    "wap_bb240_fontsize": "12",
+    "wap_bb480_fontsize": "12",
+    "wap_spaandroidtabmdpi_fontsize": "14",
+    "wap_bb320_fontsize": "12",
+    "statusBarStyle": "STATUS_BAR_STYLE_DEFAULT",
+    "project_version": "sprint24",
+    "wap_android400_fontsize": "14",
+    "wap_ip_fontsize": "12",
+    "@class": "com.kony.gen.appprops.KVizAppProps",
+    "watchos_shortlooknotificationicon_38": "",
+    "appidkey": "KonyTemplatecopy",
+    "currentgaversion": "7.1.0",
+    "mwhttpsportkey": "443",
+    "vendornamekey": "KonyLabs",
+    "konyVizVersion": "7.1.0",
+    "mfappguid": {
+        "1ae1f922-85ae-40c1-8681-8926a85a4dd2": "92dd98e2-1699-4a7d-b01b-3d97e4747bca"
+    },
+    "iphonebundleversionkey": "1.0",
+    "appnamekey": "KonyTemplatecopy",
+    "wap_spaipad_fontsize": "17",
+    "wap_android440_fontsize": "15",
+    "wap_spaandroidtabhdpi_fontsize": "16",
+    "nativeContainerProperties": {
+        "isModified": false,
+        "isEnableJSContainer": false,
+        "isEnableJSContainerAndroid": false,
+        "isEnableJSContaineriOS": false
+    },
+    "wap_bb360_fontsize": "12",
+    "enableIdForAutomation": false,
+    "isDpScaleFactor": true,
+    "referenceWidth": "375"
+}

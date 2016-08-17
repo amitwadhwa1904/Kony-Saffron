@@ -1,0 +1,20 @@
+{
+    "p2kwiet120482477619_vboxRememberMe_onClick_seq0": {
+        "id": "p2kwiet120482477619_vboxRememberMe_onClick_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_onClick_5781512048247764849",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "on_off_switch_widget",
+            "display": "on_off_switch_widget",
+            "inputparams": [{
+                "name": "imageWidget"
+            }]
+        }]
+    }
+}

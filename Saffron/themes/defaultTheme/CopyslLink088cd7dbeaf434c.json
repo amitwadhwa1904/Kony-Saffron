@@ -1,0 +1,78 @@
+{
+  "android": {
+    "font_size": 90,
+    "isForked": false
+  },
+  "background_color": "46579900",
+  "bg_type": "one",
+  "border_color": "424242ff",
+  "border_style": "plain",
+  "border_type": 0,
+  "border_width": 0,
+  "desktopweb": {
+    "font_size": 90,
+    "isForked": false
+  },
+  "font_color": "5d59c2ff",
+  "font_name": "Helvetica",
+  "font_size": 90,
+  "ipad": {
+    "font_size": 90,
+    "isForked": false
+  },
+  "iphone": {
+    "font_size": 90,
+    "isForked": false
+  },
+  "isDefaultSkin": false,
+  "kiosk": {
+    "font_size": 90,
+    "isForked": false
+  },
+  "kuid": "sc40c891a8da4fa0a282a3c290cc6eba",
+  "spaan": {
+    "font_size": 90,
+    "isForked": false
+  },
+  "spaandroidtablet": {
+    "font_size": 90,
+    "isForked": false
+  },
+  "spabb": {
+    "font_size": 90,
+    "isForked": false
+  },
+  "spaip": {
+    "font_size": 90,
+    "isForked": false
+  },
+  "spaipad": {
+    "font_size": 90,
+    "isForked": false
+  },
+  "spawindowstablet": {
+    "font_size": 90,
+    "isForked": false
+  },
+  "spawinphone8": {
+    "font_size": 90,
+    "isForked": false
+  },
+  "tabrcandroid": {
+    "font_size": 90,
+    "isForked": false
+  },
+  "wType": "Link",
+  "watchos": {
+    "font_size": 90,
+    "isForked": false
+  },
+  "windows8": {
+    "font_size": 90,
+    "isForked": false
+  },
+  "winphone8": {
+    "font_size": 90,
+    "isForked": false
+  }
+}

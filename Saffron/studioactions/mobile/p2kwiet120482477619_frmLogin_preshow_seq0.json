@@ -1,0 +1,21 @@
+{
+    "p2kwiet120482477619_frmLogin_preshow_seq0": {
+        "id": "p2kwiet120482477619_frmLogin_preshow_seq0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventobject",
+            "value": "eventobject"
+        }, {
+            "name": "neworientation",
+            "value": "neworientation"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "customcode_preshow_7579512048247762730",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "frmLogin_preShow",
+            "display": "frmLogin_preShow",
+            "inputparams": []
+        }]
+    }
+}

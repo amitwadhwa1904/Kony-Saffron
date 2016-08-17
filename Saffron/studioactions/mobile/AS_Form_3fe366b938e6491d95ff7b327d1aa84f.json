@@ -1,0 +1,21 @@
+{
+    "AS_Form_3fe366b938e6491d95ff7b327d1aa84f": {
+        "id": "AS_Form_3fe366b938e6491d95ff7b327d1aa84f",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "neworientation"
+        }],
+        "contextObj": {
+            "name": "frmLogin",
+            "type": "forms",
+            "platform": "",
+            "KUID": "p2kwiet120482477619"
+        },
+        "language": "js",
+        "actions": []
+    }
+}

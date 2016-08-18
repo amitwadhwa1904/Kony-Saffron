@@ -19,6 +19,7 @@ function skinsInit() {
     CopyslLabel0fadfeb7e6a1349 = "CopyslLabel0fadfeb7e6a1349";
     CopyslLabel0fce4dce149cb4d = "CopyslLabel0fce4dce149cb4d";
     CopyslLink088cd7dbeaf434c = "CopyslLink088cd7dbeaf434c";
+    CopyslRichText01dafd406fa6d4c = "CopyslRichText01dafd406fa6d4c";
     btnFocus = "btnFocus";
     btnNormal = "btnNormal";
     calFocus = "calFocus";
@@ -78,6 +79,7 @@ function skinsInit() {
     slLabel = "slLabel";
     slLink = "slLink";
     slPopup = "slPopup";
+    slRichText = "slRichText";
     slStaticNotificationForm = "slStaticNotificationForm";
     slTab = "slTab";
     slTextBox = "slTextBox";

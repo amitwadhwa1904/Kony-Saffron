@@ -177,7 +177,7 @@
     <attributes name="READ_FRAME_BUFFER" value="false"/>
     <attributes name="wp8fliplargekey" value=""/>
     <attributes name="BIND_DEVICE_ADMIN" value="false"/>
-    <attributes name="build" value="release"/>
+    <attributes name="build" value="debug"/>
     <attributes name="MANAGE_APP_TOKENS" value="false"/>
     <attributes name="Pictures_Library_Access" value="true"/>
     <attributes name="RECEIVE_BOOT_COMPLETED" value="false"/>
@@ -191,7 +191,7 @@
     <attributes name="RECEIVE_SMS" value="false"/>
     <attributes name="wp10applogokey" value=""/>
     <attributes name="BIND_REMOTEVIEWS" value="false"/>
-    <attributes name="appidkey" value="KonyTemplatecopy"/>
+    <attributes name="appidkey" value="Saffron"/>
     <attributes name="svcdocrefreshdynamic" value="FALSE"/>
     <attributes name="Proximity" value="true"/>
     <attributes name="WP8_ID_CAP_PROXIMITY" value="true"/>
@@ -209,7 +209,7 @@
     <attributes name="wp10initialRotationPreferenceKey" value="landscape"/>
     <attributes name="SET_ALWAYS_FINISH" value="false"/>
     <attributes name="apptitle" value=""/>
-    <attributes name="apppackagekey" value="com.orgname.KonyTemplatecopy"/>
+    <attributes name="apppackagekey" value="com.orgname.Saffron"/>
     <attributes name="WP8_ID_CAP_WALLET_SECUREELEMENT" value="false"/>
     <attributes name="SET_ALARM" value="false"/>
     <attributes name="wp10picturesLibrary" value="false"/>
@@ -223,7 +223,7 @@
     <attributes name="win8descriptionkey" value="Sample Test Application"/>
     <attributes name="extendTop" value="false"/>
     <attributes name="REORDER_TASKS" value="false"/>
-    <attributes name="iphonebundleidentifierkey" value="com.kony.KonyTemplatecopy"/>
+    <attributes name="iphonebundleidentifierkey" value="com.kony.Saffron"/>
     <attributes name="WP8_ID_CAP_NETWORKING" value="true"/>
     <attributes name="studiovizproject" value="true"/>
     <attributes name="ID_CAP_SENSORS" value="true"/>
@@ -329,7 +329,7 @@
     <attributes name="wp8doNotInstalllowerMemory" value="false"/>
     <attributes name="cloud_http_redirect" value="false"/>
     <attributes name="apmservicerequest" value="false"/>
-    <attributes name="appnamekey" value="KonyTemplatecopy"/>
+    <attributes name="appnamekey" value="Saffron"/>
     <attributes name="log_level" value="ERROR"/>
     <attributes name="wp10removableStorage" value="false"/>
     <attributes name="tileUpdateRecurrenceKey" value=""/>

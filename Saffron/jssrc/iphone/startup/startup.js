@@ -1,15 +1,15 @@
 //startup.js file
 var globalhttpheaders = {};
 var appConfig = {
-    appId: "KonyTemplatecopy",
-    appName: "KonyTemplatecopy",
+    appId: "Saffron",
+    appName: "Saffron",
     appVersion: "1.0.0",
     platformVersion: null,
     serverIp: "192.168.30.51",
     serverPort: "80",
     secureServerPort: "443",
-    isDebug: false,
-    middlewareContext: "KonyTemplatecopy",
+    isDebug: true,
+    middlewareContext: "Saffron",
     isturlbase: "https://appscore.konycloud.com/services",
     isMFApp: true,
     appKey: "cbbc1d8763258b0e6c1198f153ccc6df",
@@ -114,8 +114,8 @@ var appConfig = {
     svcDocRefresh: false,
     svcDocRefreshTimeSecs: -1,
     eventTypes: [],
-    url: "https://appscore.konycloud.com/KonyTemplatecopy/MWServlet",
-    secureurl: "https://appscore.konycloud.com/KonyTemplatecopy/MWServlet"
+    url: "https://appscore.konycloud.com/Saffron/MWServlet",
+    secureurl: "https://appscore.konycloud.com/Saffron/MWServlet"
 };
 sessionID = "";
 
@@ -131,11 +131,8 @@ function appInit(params) {
     initializehdrWithNoOption();
     initializehdrWithTwoOptions();
     frmForgotPasswordGlobals();
-    frmHamburgerGlobals();
     frmHomeGlobals();
-    frmHome1Globals();
     frmLoginGlobals();
-    frmLogin1Globals();
     frmSplashGlobals();
     MenuFormGlobals();
     setAppBehaviors();
@@ -182,6 +179,6 @@ function onSuccessSDKCallBack() {
 kony.application.setApplicationMode(constants.APPLICATION_MODE_NATIVE);
 //If default locale is specified. This is set even before any other app life cycle event is called.
 loadResources();
-kony.print = function() {
-    return;
-};
+// If you wish to debug Application Initialization events, now is the time to
+// place breakpoints.
+debugger;

@@ -26,11 +26,11 @@ function initializeflxhdrWithTwoOptions() {
     flxBoxLeft.setDefaultUnit(kony.flex.DP);
     var imgLeft = new kony.ui.Image2({
         "centerY": "50%",
+        "height": "100%",
         "id": "imgLeft",
         "isVisible": true,
         "left": "0dp",
         "skin": "slImage",
-        "src": "icon_back.png",
         "top": "0dp",
         "width": "100%"
     }, {

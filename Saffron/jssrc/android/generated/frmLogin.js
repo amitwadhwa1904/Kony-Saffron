@@ -138,7 +138,7 @@ function addWidgetsfrmLogin() {
     FlexContainer06dc7ef4d4a494b.add(txtEmail, txtPassword, Button01ecb6c0c852646, Label05b229a7bc00a4b, CopyButton09a24aed5924741);
     var flexBoxFooter = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
-        "bottom": 0,
+        "bottom": "1dp",
         "clipBounds": true,
         "height": 140,
         "id": "flexBoxFooter",
@@ -146,7 +146,6 @@ function addWidgetsfrmLogin() {
         "layoutType": kony.flex.FLOW_VERTICAL,
         "left": "0dp",
         "skin": "slFbox",
-        "top": "2%",
         "width": "100%"
     }, {}, {});
     flexBoxFooter.setDefaultUnit(kony.flex.DP);
@@ -184,7 +183,7 @@ function addWidgetsfrmLogin() {
         "isVisible": true,
         "left": "0dp",
         "skin": "slImage",
-        "src": "icon_check.png",
+        "src": "call.png",
         "top": "5dp",
         "width": kony.flex.USE_PREFFERED_SIZE
     }, {
@@ -228,7 +227,7 @@ function addWidgetsfrmLogin() {
         "isVisible": true,
         "left": "0dp",
         "skin": "slImage",
-        "src": "icon_check.png",
+        "src": "fb.png",
         "top": "5dp",
         "width": kony.flex.USE_PREFFERED_SIZE
     }, {
@@ -272,7 +271,7 @@ function addWidgetsfrmLogin() {
         "isVisible": true,
         "left": "0dp",
         "skin": "slImage",
-        "src": "icon_check.png",
+        "src": "twitter.png",
         "top": "5dp",
         "width": kony.flex.USE_PREFFERED_SIZE
     }, {
@@ -286,7 +285,7 @@ function addWidgetsfrmLogin() {
         "isVisible": true,
         "left": "0dp",
         "skin": "CopyslRichText01dafd406fa6d4c",
-        "text": "Follow on<br>Google+\n\n\n",
+        "text": "Follow on<br>Twitter\n\n\n",
         "top": "5dp",
         "width": "100%",
         "zIndex": 1
@@ -316,7 +315,7 @@ function addWidgetsfrmLogin() {
         "isVisible": true,
         "left": "0dp",
         "skin": "slImage",
-        "src": "icon_check.png",
+        "src": "instagram.png",
         "top": "5dp",
         "width": kony.flex.USE_PREFFERED_SIZE
     }, {
@@ -436,7 +435,7 @@ function addWidgetsfrmLogin() {
         "isVisible": true,
         "left": "22%",
         "skin": "slImage",
-        "src": "icon_check.png",
+        "src": "copyrights.png",
         "top": "5dp",
         "width": kony.flex.USE_PREFFERED_SIZE
     }, {
@@ -450,7 +449,7 @@ function addWidgetsfrmLogin() {
         "isVisible": true,
         "left": "72%",
         "skin": "slImage",
-        "src": "icon_check.png",
+        "src": "map.png",
         "top": "5dp",
         "width": kony.flex.USE_PREFFERED_SIZE
     }, {

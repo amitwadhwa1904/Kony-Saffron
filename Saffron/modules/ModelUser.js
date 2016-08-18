@@ -14,6 +14,7 @@ function UserData(userData){
   	this.email = "";
   	this.mobile = "";
   	this.password = "";
+  	this.confirmpassword = "";  
   	this.loyaltyPoints = null;  
 
 	if (registerData != null) {

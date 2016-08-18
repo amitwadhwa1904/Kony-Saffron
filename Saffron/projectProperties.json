@@ -91,7 +91,7 @@
     "wap_android440_fontsize": "15",
     "wap_spaandroidtabhdpi_fontsize": "16",
     "nativeContainerProperties": {
-        "isModified": false,
+        "isModified": true,
         "isEnableJSContainer": false,
         "isEnableJSContainerAndroid": false,
         "isEnableJSContaineriOS": false

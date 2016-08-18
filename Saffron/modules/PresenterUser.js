@@ -50,7 +50,8 @@ function UserPresenter(){
           	"name" : this.txtName.text,
 	        "email" : this.txtEmail.text,          
           	"mobile" : this.txtMobile.text,
-	        "password" : this.txtPassword.text
+	        "password" : this.txtPassword.text,
+	        "confirmpassword" : this.txtConfirmPassword.text
         };
     };
 }

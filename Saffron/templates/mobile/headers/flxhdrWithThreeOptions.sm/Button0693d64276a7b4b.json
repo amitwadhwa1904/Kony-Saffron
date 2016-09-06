@@ -1,0 +1,54 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "60%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "2%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "se76a87ba32c468cae4050ec444c34ed",
+    "_text_": "Order Now",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "20%"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerId": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "se76a87ba32c468cae4050ec444c34ed",
+    "id": "Button0693d64276a7b4b",
+    "info": null,
+    "isvisible": true,
+    "kuid": "4a9754ce742143a59c5a1aacf78b6bda",
+    "name": "kony.ui.Button",
+    "parent": "flxContainerThreeOptions",
+    "pf": "flxhdrWithThreeOptions",
+    "wType": "Button",
+    "zindex": 1
+}

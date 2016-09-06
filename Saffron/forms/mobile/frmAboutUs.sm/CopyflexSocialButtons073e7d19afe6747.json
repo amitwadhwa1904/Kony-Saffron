@@ -1,0 +1,63 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_bottom_": {
+        "type": "string",
+        "value": "1%"
+    },
+    "_height_": {
+        "type": "string",
+        "value": "49%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s865e4333c994b8ab345c0fb25004b35",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "CopyFlexContainer074f35270e34442",
+        "CopyFlexContainer07ac816dcfa484c",
+        "CopyFlexContainer0699fd285385f47",
+        "CopyFlexContainer031533160ac3646"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "CopyflexSocialButtons073e7d19afe6747",
+    "info": null,
+    "isvisible": true,
+    "kuid": "e9a67e068cb54ed3a3c7facff7d8de58",
+    "layouttype": 3,
+    "name": "kony.ui.FlexContainer",
+    "parent": "CopyflexBoxFooter04e2e59cb7fac46",
+    "pf": "frmAboutUs",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1
+}

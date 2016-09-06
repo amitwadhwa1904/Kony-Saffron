@@ -1,0 +1,21 @@
+{
+    "AS_Button_6715165ac7784481822da09dfbe47dcd": {
+        "id": "AS_Button_6715165ac7784481822da09dfbe47dcd",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___89d51bb328df4e9593680da26a0567fa",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "frmForgotPwd_onSendEmailBtnClick",
+            "display": "frmForgotPwd_onSendEmailBtnClick",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

@@ -15,11 +15,11 @@ function addWidgetsfrmHome() {
     }, {}, {});
     MenuContainer.setDefaultUnit(kony.flex.DP);
     MenuContainer.add();
-    var FlexContainer03de438e5fa574e = new kony.ui.FlexContainer({
+    var flxCntrHome = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "clipBounds": true,
         "height": "100%",
-        "id": "FlexContainer03de438e5fa574e",
+        "id": "flxCntrHome",
         "isVisible": true,
         "layoutType": kony.flex.FLOW_VERTICAL,
         "left": "0dp",
@@ -28,14 +28,14 @@ function addWidgetsfrmHome() {
         "width": "100%",
         "zIndex": 1
     }, {}, {});
-    FlexContainer03de438e5fa574e.setDefaultUnit(kony.flex.DP);
+    flxCntrHome.setDefaultUnit(kony.flex.DP);
     var FlexContainer06dc7ef4d4a494b = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "clipBounds": true,
         "height": "70%",
         "id": "FlexContainer06dc7ef4d4a494b",
         "isVisible": true,
-        "layoutType": kony.flex.FREE_FORM,
+        "layoutType": kony.flex.FLOW_VERTICAL,
         "left": "0dp",
         "skin": "slFbox",
         "top": "0dp",
@@ -82,7 +82,7 @@ function addWidgetsfrmHome() {
         "secureTextEntry": true,
         "skin": "slTextBox",
         "textInputMode": constants.TEXTBOX_INPUT_MODE_ANY,
-        "top": "120dp",
+        "top": "20dp",
         "width": "260dp",
         "zIndex": 1
     }, {
@@ -107,7 +107,7 @@ function addWidgetsfrmHome() {
         "onClick": AS_Button_31c5965093c2414b931ba7fe9d585e3a,
         "skin": "CopyslButtonGlossBlue01763c2c96ba941",
         "text": "Logindd",
-        "top": "210dp",
+        "top": "30dp",
         "width": "260dp",
         "zIndex": 1
     }, {
@@ -500,8 +500,8 @@ function addWidgetsfrmHome() {
     FlexContainer05097c80182204d.add(FlexContainer0bf6527be8edc4f);
     flexCopyright.add(FlexContainer05097c80182204d);
     flexBoxFooter.add(flexSocialButtons, flexCopyright);
-    FlexContainer03de438e5fa574e.add(FlexContainer06dc7ef4d4a494b, flexBoxFooter);
-    frmHome.add(MenuContainer, FlexContainer03de438e5fa574e);
+    flxCntrHome.add(FlexContainer06dc7ef4d4a494b, flexBoxFooter);
+    frmHome.add(MenuContainer, flxCntrHome);
 };
 
 function frmHomeGlobals() {

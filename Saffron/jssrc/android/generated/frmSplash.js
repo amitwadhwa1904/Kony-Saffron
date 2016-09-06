@@ -9,7 +9,7 @@ function frmSplashGlobals() {
         "id": "frmSplash",
         "needAppMenu": true,
         "postShow": AS_Form_0244ac674d7c4f429633ff1a5a30325e,
-        "skin": "sknWhiteBackground"
+        "skin": "sknSplashScreen"
     }, {
         "displayOrientation": constants.FORM_DISPLAY_ORIENTATION_PORTRAIT,
         "layoutType": constants.CONTAINER_LAYOUT_BOX,

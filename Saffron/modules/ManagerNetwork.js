@@ -1,14 +1,4 @@
 
-/**
- * invokeHTTPService - Invoke Http service service without passing by kony server
- *
- * @param  {String} method
- * @param  {String} URL            url of the service
- * @param  {Object} data           data to send
- * @param	 {ServiceCallback}	callback       method to call once service call is finish
- * @param  {type} info           data to pass to the callback
- * @param  {bool} backgroundMode add this param if you don't want to show a loading screen
- */
 function invokeHTTPService(method, URL, data, callback, info, backgroundMode) {
 	if(appscore.app.isNetworkAvailable() == true){
 		if(backgroundMode == null)appscore.loadingScreen.show();
@@ -29,18 +19,13 @@ function invokeHTTPService(method, URL, data, callback, info, backgroundMode) {
 			httpclient.send(_frmData);
 			httpclient.onReadyStateChange = function(){ HandleHTTPResponse(URL, httpclient, callback);};
 		}else{
-//			simulateService(serviceId, data, serviceStatusCallback, info);
+			simulateService(URL, data, function(obj){ 
+              HandleHTTPResponse(URL, obj, callback);}, info);
 		}
 	}
 }
 
-/**
- * HandleHTTPResponse - callback method to handle the response from HTTP API call
- *
- * @param  {String} URL URL of the HTTP service
- * @param  {Object} obj      response object from HTTP API call
- * @param  {ServiceCallback} callback  method to call once the request is sent
- */
+
 function HandleHTTPResponse(URL, obj, callback) {
 	if (obj.readyState == 1){
  		appscore.print.log("status " + obj.readyState);
@@ -49,7 +34,7 @@ function HandleHTTPResponse(URL, obj, callback) {
  	}else if (obj.readyState == 3){
  		appscore.print.log("status " + obj.readyState);
  	}else if (obj.readyState == 4){
- 		appscore.print.log("Service == " + URL + "status " + obj.readyState + " Content-Type " + JSON.stringify(obj.getAllResponseHeaders()));
+ 		appscore.print.log("Service == " + URL + "status " + obj.readyState);
  		var resultTable = {};
  		resultTable["main"]  = obj.response;
  		resultTable["opstatus"] = obj.status.toString();
@@ -61,17 +46,7 @@ function HandleHTTPResponse(URL, obj, callback) {
 	}
 }
 
-/**
-* Invoke application service
-*/
 
-/**
- * invokeAppService - invoke kony service
- *
- * @param  {String} serviceId id of the service
- * @param  {Object} data      data to send
- * @param  {ServiceCallback} callback  method to call once the request is sent
- */
 function invokeAppService(serviceId, data, callback) {
 	if(appscore.app.isNetworkAvailable() == true){
 		appscore.loadingScreen.show();
@@ -96,13 +71,7 @@ function invokeAppService(serviceId, data, callback) {
 }
 
 
-/**
- * serviceStatusCallback - callback method to handle the response from kony service
- *
- * @param  {Integer} status an integer value indicating the status
- * @param  {Object} resultTable      response object with key-value pairs
- * @param  {Object} info  user data passed to async service
- */
+
 function serviceStatusCallback(status, resultTable, info) {
 
  	if (status == 100){
@@ -121,10 +90,3 @@ function serviceStatusCallback(status, resultTable, info) {
 		appscore.print.error("No Status!\nerrcode :" + results["errcode"] + " \n errmsg : " + results["errmsg"])
 	}
  }
-
-
-/**
- * @callback ServiceCallback
- * @param  {String} status    API status
- * @param  {Object} resultTable    data sent back by the API
- */

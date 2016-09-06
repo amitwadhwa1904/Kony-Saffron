@@ -1,0 +1,50 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0.50%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s8159b99e9004e619516c5f02a284cee",
+    "_text_": "Featured Deals",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "50%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {
+        "focusSkin": "s3ee38a8593f47f48ac311d7ef2ae1ad"
+    },
+    "displaytext": true,
+    "id": "btnFeaturedDeals",
+    "info": null,
+    "isvisible": true,
+    "kuid": "8b403344f8754f3d8a55d5f7f1bc6ec3",
+    "name": "kony.ui.Button",
+    "parent": "FCBtns",
+    "pf": "frmHome",
+    "wType": "Button"
+}

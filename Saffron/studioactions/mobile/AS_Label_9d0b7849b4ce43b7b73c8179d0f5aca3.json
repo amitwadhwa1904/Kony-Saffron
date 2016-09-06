@@ -1,0 +1,34 @@
+{
+    "AS_Label_9d0b7849b4ce43b7b73c8179d0f5aca3": {
+        "id": "AS_Label_9d0b7849b4ce43b7b73c8179d0f5aca3",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmLogin",
+            "type": "forms",
+            "platform": "",
+            "KUID": "36f5225924db42d387dd619732bc21b3"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM___9847961d18c34b5faa44bd372115e798",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "frmForgotPwd",
+            "formKUID": "4330a29820124e05a43b6213d57b3353",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true
+        }]
+    }
+}

@@ -1,7 +1,11 @@
 {
+  "android": {
+    "background_image": "splashandroid.png",
+    "bg_type": "image"
+  },
   "applicableblockedUIWidget": "Button",
-  "background_color": "ffffffff",
-  "bg_type": "one",
+  "background_image": "splashandroid.png",
+  "bg_type": "image",
   "blockedimgURL": "",
   "border_color": "000000ff",
   "border_style": "plain",
@@ -71,6 +75,11 @@
     "vizChannel": "ipad",
     "wType": "Form"
   },
+  "iphone": {
+    "background_image": "splashios.png",
+    "bg_type": "image"
+  },
+  "isDefaultSkin": false,
   "isForked": false,
   "kiosk": {
     "applicableblockedUIWidget": "Button",
@@ -118,7 +127,7 @@
     "vizChannel": "kiosk",
     "wType": "Form"
   },
-  "kuid": "s68220a5fd0a4f5095d3afdaa383ee6e",
+  "kuid": "s61c4a47c7e54cb79669646f947b8fb1",
   "shadow": {
     "br": 0,
     "color": "000000",

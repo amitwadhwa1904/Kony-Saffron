@@ -6,7 +6,7 @@ function initializeflxhdrWithThreeOptions() {
         "id": "flxContainerThreeOptions",
         "isVisible": true,
         "layoutType": kony.flex.FLOW_HORIZONTAL,
-        "skin": "CopyslFbox03c9f9fc4a8704d"
+        "skin": "sknFCWhiteBG"
     }, {}, {});
     flxContainerThreeOptions.setDefaultUnit(kony.flex.DP);
     var flxBoxLeft = new kony.ui.FlexContainer({
@@ -18,109 +18,93 @@ function initializeflxhdrWithThreeOptions() {
         "id": "flxBoxLeft",
         "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
-        "left": "2%",
-        "skin": "CopyslFbox0d1eab10cd2e942",
+        "left": "3%",
+        "skin": "sknFCTransparent",
         "top": "0dp",
         "width": "13%"
     }, {}, {});
     flxBoxLeft.setDefaultUnit(kony.flex.DP);
     var imgLeft = new kony.ui.Image2({
         "centerY": "50%",
+        "height": "50%",
         "id": "imgLeft",
         "isVisible": true,
         "left": "0dp",
-        "skin": "slImage",
-        "src": "icon_back.png",
+        "skin": "CopyslImage056512607672942",
+        "src": "menus.png",
         "top": "0dp",
-        "width": "100%"
+        "width": "50%"
     }, {
         "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
         "padding": [0, 0, 0, 0],
         "paddingInPixel": false
     }, {});
-    flxBoxLeft.add(imgLeft);
-    var lblHeader = new kony.ui.Label({
-        "bottom": 0,
+    var lblLoginTxt = new kony.ui.RichText({
+        "centerX": "50%",
         "centerY": "50%",
-        "id": "lblHeader",
+        "id": "lblLoginTxt",
         "isVisible": true,
         "left": "0dp",
-        "right": 0,
-        "skin": "CopyslLabel0fadfeb7e6a1349",
-        "text": "Label",
-        "textStyle": {
-            "letterSpacing": 0,
-            "strikeThrough": false
-        },
+        "skin": "sknRichFooterTxt",
+        "text": "<b>Log In-></b>\n\n\n",
         "top": "0dp",
-        "width": "50%",
+        "width": "100%",
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_CENTER,
-        "padding": [0, 4, 0, 4],
-        "paddingInPixel": false
-    }, {
-        "textCopyable": false
-    });
-    var flxBoxRight = new kony.ui.FlexContainer({
-        "autogrowMode": kony.flex.AUTOGROW_NONE,
-        "bottom": "0dp",
-        "centerY": "50%",
-        "clipBounds": true,
-        "height": "100%",
-        "id": "flxBoxRight",
-        "isVisible": true,
-        "layoutType": kony.flex.FREE_FORM,
-        "left": "0%",
-        "skin": "CopyslFbox0f70fff0b991c43",
-        "top": "0dp",
-        "width": "20%"
-    }, {}, {});
-    flxBoxRight.setDefaultUnit(kony.flex.DP);
-    var CopyimgLeft05b1c72790a6e4b = new kony.ui.Image2({
-        "centerY": "50%",
-        "id": "CopyimgLeft05b1c72790a6e4b",
-        "isVisible": true,
-        "left": "0dp",
-        "skin": "slImage",
-        "src": "icon_back.png",
-        "top": "0dp",
-        "width": "100%"
-    }, {
-        "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
         "padding": [0, 0, 0, 0],
         "paddingInPixel": false
     }, {});
-    flxBoxRight.add(CopyimgLeft05b1c72790a6e4b);
-    var CopyflxBoxRight0352ad51d30a44a = new kony.ui.FlexContainer({
+    flxBoxLeft.add(imgLeft, lblLoginTxt);
+    var CopyflxBoxLeft027e81a001e5b41 = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
-        "bottom": "0dp",
+        "centerX": "29%",
         "centerY": "50%",
         "clipBounds": true,
-        "height": "100%",
-        "id": "CopyflxBoxRight0352ad51d30a44a",
+        "height": "90%",
+        "id": "CopyflxBoxLeft027e81a001e5b41",
         "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
         "left": "0%",
-        "skin": "CopyslFbox0f70fff0b991c43",
+        "onClick": AS_FlexContainer_85c668c9207d4beeb8f290cc9aad5715,
+        "skin": "sknFCTransparent",
         "top": "0dp",
-        "width": "13%"
+        "width": "50%"
     }, {}, {});
-    CopyflxBoxRight0352ad51d30a44a.setDefaultUnit(kony.flex.DP);
-    var CopyimgLeft08f91a4025dfe4a = new kony.ui.Image2({
+    CopyflxBoxLeft027e81a001e5b41.setDefaultUnit(kony.flex.DP);
+    var Image058fbe665323643 = new kony.ui.Image2({
+        "centerX": "50%",
         "centerY": "50%",
-        "id": "CopyimgLeft08f91a4025dfe4a",
+        "id": "Image058fbe665323643",
         "isVisible": true,
         "left": "0dp",
         "skin": "slImage",
-        "src": "icon_back.png",
+        "src": "logo.png",
         "top": "0dp",
-        "width": "100%"
+        "width": "75%"
     }, {
         "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
+        "padding": [1, 1, 1, 1],
+        "paddingInPixel": false
+    }, {});
+    CopyflxBoxLeft027e81a001e5b41.add(Image058fbe665323643);
+    var Button0693d64276a7b4b = new kony.ui.Button({
+        "centerY": "50%",
+        "focusSkin": "sknBtnOrange",
+        "height": "60%",
+        "id": "Button0693d64276a7b4b",
+        "isVisible": true,
+        "left": "2%",
+        "skin": "sknBtnOrange",
+        "text": "Order Now",
+        "top": "0dp",
+        "width": "20%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "displayText": true,
         "padding": [0, 0, 0, 0],
         "paddingInPixel": false
     }, {});
-    CopyflxBoxRight0352ad51d30a44a.add(CopyimgLeft08f91a4025dfe4a);
-    flxContainerThreeOptions.add(flxBoxLeft, lblHeader, flxBoxRight, CopyflxBoxRight0352ad51d30a44a);
+    flxContainerThreeOptions.add(flxBoxLeft, CopyflxBoxLeft027e81a001e5b41, Button0693d64276a7b4b);
 }

@@ -15,7 +15,7 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s3f768fd25ab44b297054cc4d6ed59a4",
+    "_skin_": "s828b1cc2a2c4d1bb4fec00503b53dbf",
     "_title_": null,
     "addWidgetsdone": false,
     "allboxes": [],
@@ -28,7 +28,7 @@
     },
     "canUpdateUI": true,
     "children": [
-        "FlexContainer03de438e5fa574e"
+        "FlexScrollContainer0b91c374370c64f"
     ],
     "containerweight": 100,
     "currentLocale": null,
@@ -82,7 +82,7 @@
     "needappmenu": true,
     "paddinginpixel": false,
     "platform": "iphone",
-    "prevDevice": "GalaxyS4",
+    "prevDevice": "GalaxyS5",
     "prevPlatform": "android",
     "retainscrollposition": false,
     "shellCSS": "iOS_iPhone6",

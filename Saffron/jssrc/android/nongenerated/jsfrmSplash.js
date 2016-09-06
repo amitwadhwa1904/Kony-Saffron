@@ -6,7 +6,7 @@ function splashScreenCheck() {
     if (appscore.app.isNetworkAvailable() == true) {
         loginManager.validateLogin(function() {
             if (loginManager.getLogin() == null) {
-                frmLogin.show()
+                frmHome.show()
             } else {
                 frmHome.show();
             }

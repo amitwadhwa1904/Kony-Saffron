@@ -1,0 +1,27 @@
+{
+    "AS_FlexContainer_c9bfd102ec8a4ae1b31c25518163cc64": {
+        "id": "AS_FlexContainer_c9bfd102ec8a4ae1b31c25518163cc64",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHome",
+            "type": "forms",
+            "platform": "",
+            "KUID": "979e555fb19d4cd7a7ffcaf53cf45019"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___dbc218937d13415db3d0c6eb24468df6",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "openFacebookLink",
+            "display": "openFacebookLink",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

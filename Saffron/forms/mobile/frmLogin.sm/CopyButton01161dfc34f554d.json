@@ -1,0 +1,54 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "58dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s1937aa56b0946bcab1b31ca5ee74246",
+    "_text_": "Login",
+    "_top_": {
+        "type": "string",
+        "value": "50dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "260dp"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s1937aa56b0946bcab1b31ca5ee74246",
+    "id": "CopyButton01161dfc34f554d",
+    "ide_onClick": "AS_Button_2c3bc719c6c04e958fcc46327760d12f",
+    "info": null,
+    "isvisible": true,
+    "kuid": "1cff92ade22548389f7086d920a00f03",
+    "name": "kony.ui.Button",
+    "parent": "CopyFlexContainer0b5fd561787784b",
+    "pf": "frmLogin",
+    "wType": "Button",
+    "zindex": 1
+}

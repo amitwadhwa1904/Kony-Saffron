@@ -420,7 +420,7 @@ function mfobjectsecureinvokerasync(inputParam, serviceID, objectID, callBack) {
 };
 
 function appmenuseq() {
-    frmLogin.show();
+    frmHome.show();
 };
 
 function callAppMenu() {

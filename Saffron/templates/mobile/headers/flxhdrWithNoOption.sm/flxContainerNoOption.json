@@ -24,7 +24,7 @@
     "canUpdateUI": true,
     "children": [
         "flxBoxLeft",
-        "lblHeader",
+        "CopyflxBoxLeft027e81a001e5b41",
         "flxBoxRight"
     ],
     "clipbounds": true,

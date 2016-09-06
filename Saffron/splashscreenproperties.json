@@ -1,34 +1,37 @@
 {
-	"splashScreen": {
-		"mobile": {
-			"iphone": {
-				"splashImage": "splash.png"
-			},
-			"android": {},
-			"winphone8": {},
-			"spa": {},
-			"spaip": {},
-			"spaan": {},
-			"spabb": {},
-			"spawinphone8": {}
-		},
-		"tablet": {
-			"ipad": {
-				"landscape": {
-					"splashImage": "splashland.png"
-				},
-				"splashImage": "splash.png"
-			},
-			"android": {},
-			"windows8": {},
-			"spa": {},
-			"spaipad": {},
-			"spaandroidtablet": {},
-			"spawindowstablet": {}
-		},
-		"desktop": {
-			"desktopweb": {},
-			"kiosk": {}
-		}
-	}
+    "splashScreen": {
+        "mobile": {
+            "iphone": {
+                "splashImage": "splashios.png"
+            },
+            "android": {
+                "splashImage": "splashandroid1.png"
+            },
+            "winphone8": {},
+            "spa": {},
+            "spaip": {},
+            "spaan": {},
+            "spabb": {},
+            "spawinphone8": {},
+            "splashImage": "splashandroid1.png"
+        },
+        "tablet": {
+            "ipad": {
+                "landscape": {
+                    "splashImage": "splashland.png"
+                },
+                "splashImage": "splash.png"
+            },
+            "android": {},
+            "windows8": {},
+            "spa": {},
+            "spaipad": {},
+            "spaandroidtablet": {},
+            "spawindowstablet": {}
+        },
+        "desktop": {
+            "desktopweb": {},
+            "kiosk": {}
+        }
+    }
 }

@@ -1,15 +1,15 @@
 //startup.js file
 var globalhttpheaders = {};
 var appConfig = {
-    appId: "KonyTemplatecopy",
-    appName: "KonyTemplatecopy",
+    appId: "Saffron",
+    appName: "Saffron",
     appVersion: "1.0.0",
     platformVersion: null,
     serverIp: "192.168.30.51",
     serverPort: "80",
     secureServerPort: "443",
-    isDebug: false,
-    middlewareContext: "KonyTemplatecopy",
+    isDebug: true,
+    middlewareContext: "Saffron",
     isturlbase: "https://appscore.konycloud.com/services",
     isMFApp: true,
     appKey: "cbbc1d8763258b0e6c1198f153ccc6df",
@@ -114,8 +114,8 @@ var appConfig = {
     svcDocRefresh: false,
     svcDocRefreshTimeSecs: -1,
     eventTypes: [],
-    url: "https://appscore.konycloud.com/KonyTemplatecopy/MWServlet",
-    secureurl: "https://appscore.konycloud.com/KonyTemplatecopy/MWServlet"
+    url: "https://appscore.konycloud.com/Saffron/MWServlet",
+    secureurl: "https://appscore.konycloud.com/Saffron/MWServlet"
 };
 sessionID = "";
 
@@ -124,15 +124,16 @@ function appInit(params) {
     initializeflxhdrWithNoOption();
     initializeflxhdrWithThreeOptions();
     initializeflxhdrWithTwoOptions();
-    initializehdrWithBackOption();
-    initializehdrWithNoOption();
-    initializehdrWithTwoOptions();
-    frmForgotPasswordGlobals();
+    initializeFBox03566c54e551240();
+    initializeTemp06df6b7b242734e();
+    frmAboutUsGlobals();
+    frmChangePwdGlobals();
+    frmForgotPwdGlobals();
     frmHomeGlobals();
-    frmHome1Globals();
     frmLoginGlobals();
-    frmLogin1Globals();
+    frmRegisterGlobals();
     frmSplashGlobals();
+    frmUserSettingsGlobals();
     MenuFormGlobals();
     setAppBehaviors();
 };
@@ -154,7 +155,7 @@ function themeCallBack() {
         init: appInit,
         postappinit: AS_AppEvents_06113dfd1e1f409cb9b10f462d0e6efc,
         showstartupform: function() {
-            frmLogin.show();
+            frmHome.show();
         }
     });
 };
@@ -181,6 +182,6 @@ function onSuccessSDKCallBack() {
 kony.application.setApplicationMode(constants.APPLICATION_MODE_NATIVE);
 //If default locale is specified. This is set even before any other app life cycle event is called.
 loadResources();
-kony.print = function() {
-    return;
-};
+// If you wish to debug Application Initialization events, now is the time to
+// place breakpoints.
+debugger;

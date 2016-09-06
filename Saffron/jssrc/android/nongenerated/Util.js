@@ -103,7 +103,7 @@ utils.validate = {
          * @return {bool}       true if the text is null or empty
          */
         isStringNullEmpty: function(textField) {
-            return textField.text == null || textField.text.trim().length == 0;
+            return textField == null || textField.text == null || textField.text.trim().length == 0;
         },
         /**
          * email - check if the text is an email is valid
@@ -121,6 +121,9 @@ utils.validate = {
          */
         phone: function(phone) {
             return /^04\d{8}/.test(phone) && phone.length == 10;
+        },
+        isPasswordMatching: function(pwd, confirmPwd) {
+            return pwd.text == confirmPwd.text;
         }
     }
     /**
@@ -199,37 +202,23 @@ utils.other = {
         return text + Math.floor((Math.random() * 10000) + 1);
     },
     /**
-     * generateDataForCollectionView - take an array of data for a segment
-     * transform the datas to put 2 element of the array into 1 row
-     * array of data and the segment template must have matching key.
-     * example : if you want your segment to have 2 label : call them in your segment template lblCat0 and lblCat1
-     * the array of data needs to have a key call lblCat.
+     * Generic array sorting
      *
-     * @param  {Array} segmentData list of object formatted for a segment ([obj1,obj2,obj3])
-     * @return {Array}             list of object formatted for 2 cell per line segment ([obj1+2,obj3])
+     * @param property
+     * @returns {Function}
      */
-    generateDataForCollectionView: function(segmentData) {
-        var segmentRows = [];
-        var segmentRow = {};
-        for (var i = 0; i < segmentData.length; i++) {
-            var cellData = segmentData[i];
-            var pos = i % 2; // pos will be 0 or 1
-            for (var key in cellData) {
-                segmentRow[key + pos] = cellData[key];
-            }
-            if (pos == 1) {
-                segmentRows.push(segmentRow);
-                segmentRow = {};
+    sortByProperty: function(property) {
+        return function(x, y) {
+            return ((x[property] === y[property]) ? 0 : ((x[property] > y[property]) ? 1 : -1));
+        };
+    },
+    cleanJSONArray: function(_arr) {
+        var _array = [];
+        for (var i = 0; i < _arr.length; i++) {
+            if (_arr[i] == null || _arr[i] == undefined || _arr[i] == "undefined") {} else {
+                _array.push(_arr[i]);
             }
         }
-        if (Object.keys(segmentRow).length > 0) {
-            for (var key in cellData) {
-                segmentRow[key + 1] = {
-                    isVisible: false
-                };
-            }
-            segmentRows.push(segmentRow);
-        }
-        return segmentRows;
+        return _array;
     }
 }

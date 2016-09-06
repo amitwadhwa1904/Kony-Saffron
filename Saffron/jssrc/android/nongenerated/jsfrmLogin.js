@@ -10,15 +10,11 @@ function frmLogin_init() {
 function frmLogin_preShow() {
     appscore.print.start();
     frmLogin_setUI();
-    //loginPresenter.setLoginData(loginManager);
     appscore.print.stop();
 }
 
 function frmLogin_setUI() {
     appscore.print.start();
-    frmLogin.headers[0].lblHeader.text = LOGIN_TITLE;
-    // If gRememberMe_Support if true, enable remember me feature
-    // otherwise disable the feature
     appscore.print.stop();
 }
 

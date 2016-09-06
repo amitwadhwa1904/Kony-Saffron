@@ -1,0 +1,58 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "30dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "30dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s865e4333c994b8ab345c0fb25004b35",
+    "_top_": {
+        "type": "string",
+        "value": "5dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "CopyImage0d49b19e91b6447",
+        "CopyLabel099233fa9fde14f"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "CopyFlexContainer0df8ee9e2e7ff43",
+    "ide_onClick": "AS_FlexContainer_773f1d2a705f4bbb89a6ccadd7d11787",
+    "info": null,
+    "isvisible": true,
+    "kuid": "beff3d08bb3c4cdba09ba4ccf97fda8e",
+    "layouttype": 3,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxSideMenu",
+    "pf": "MenuForm",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1
+}

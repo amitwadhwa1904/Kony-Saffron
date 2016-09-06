@@ -2,6 +2,7 @@ var loginManager = new LoginManager();
 
 function LoginManager() {
     this.login = null;
+    this.isLoggedIn = null;
     this.getLogin = function() {
         this.login = appscore.dao.request("Creds");
         return this.login;
@@ -18,16 +19,17 @@ function LoginManager() {
         var token = null;
         if (login) token = login.token
         if (token) {
-            invokeAppService(SERV_VALIDATE, {
+            invokeHTTPService("GET", SERV_VALIDATE, {
                 "token": token
             }, function(status, resultTable) {
                 appscore.print.log("status :" + status);
                 appscore.print.log("resultTable :" + JSON.stringify({
                     "data": resultTable
                 }));
-                if (resultTable["opstatus"] == 0) {
+                if (resultTable["opstatus"].charAt(0) == "2") { // HTTP Success Status code starts with 2
                     var response = resultTable["main"];
                     appscore.print.log("result :" + response.result);
+                    loginManager.isLoggedIn = true;
                 } else {
                     appscore.print.error("Error", "Token is expired.");
                     loginManager.logout();
@@ -39,18 +41,20 @@ function LoginManager() {
         }
     };
     this.validateMember = function(callback) {
-        invokeAppService(SERV_AUTHENTICATE, this.login, function(status, resultTable) {
-            appscore.print.log("status :" + status);
+        invokeHTTPService("GET", SERV_AUTHENTICATE, JSON.stringify(this.login), function(status, resultTable) {
+            appscore.print.start();
             appscore.print.log("resultTable :" + JSON.stringify({
                 "data": resultTable
             }));
-            if (resultTable["opstatus"] == 0) {
+            if (resultTable["opstatus"].charAt(0) == "2") { // HTTP Success Status code starts with 2
                 var response = resultTable["main"];
                 appscore.print.log("token :" + response.token);
                 loginManager.login.token = response.token;
-                callback();
+                loginManager.isLoggedIn = true;
+                if (callback) callback();
             } else {
-                appscore.alert.error("Invalid Credentials", "Your login details are incorrect. Please Check your informations.");
+                loginManager.isLoggedIn = false;
+                appscore.print.error("errcode :" + resultTable["opstatus"] + " \n errmsg : " + resultTable["main"]);
             }
         });
     };
@@ -72,5 +76,6 @@ function LoginManager() {
     this.logout = function() {
         appscore.dao.remove("Creds");
         this.login = null;
+        loginManager.isLoggedIn = false;
     };
 }

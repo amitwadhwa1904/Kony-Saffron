@@ -1,0 +1,53 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizRichText",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "52%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "se3a61305e6e4c099e1104e7b9820fce",
+    "_text_": "1/5 Danaher Dr, South Morang <br>VIC 3752, Australia\n\n\n",
+    "_top_": {
+        "type": "string",
+        "value": "5dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "46%"
+    },
+    "_wrapping_": 2,
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "65%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "id": "CopyRichText082d4443561c44e",
+    "info": null,
+    "isvisible": true,
+    "kuid": "8a6389f0ea0a41659e910423052e8901",
+    "name": "kony.ui.RichText",
+    "parent": "CopyFlexContainer04f077f61894f48",
+    "pf": "frmLogin",
+    "wType": "RichText",
+    "widgetalignment": 5,
+    "zindex": 1
+}

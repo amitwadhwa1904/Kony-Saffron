@@ -1,0 +1,27 @@
+{
+    "AS_Form_abb7b4f353c84ca5931d0b731aee911e": {
+        "id": "AS_Form_abb7b4f353c84ca5931d0b731aee911e",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmForgotPwd",
+            "type": "forms",
+            "platform": "",
+            "KUID": "4330a29820124e05a43b6213d57b3353"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___b2a2cad4017b4af9973c59dcad159b93",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "frmForgotPwd_preShow",
+            "display": "frmForgotPwd_preShow",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

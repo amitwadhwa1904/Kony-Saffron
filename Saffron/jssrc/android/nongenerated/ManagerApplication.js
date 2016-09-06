@@ -2,31 +2,21 @@
  * Application id
  */
 var gAppId = "KonyTemplate";
-/**
- * Variable to now if we are calling APIs or simulating APIs calls and generating test datas on the application
- */
-var gUseApi = true;
-/**
- * Debug or Release mode
- */
+var gUseApi = false;
 var gDebug = true;
-/**
- * RememberMe Support flag to turn the feature ON/OFF
- */
 var gRememberMe_Support = true;
 var googleAnalytics = null;
-/**
- * Callback object for handling App foreground and App background methods
- */
 var callbacksObj = {
     onbackground: onAppBackground,
     onforeground: onAppForeground
 };
+var menuVisibility = false;
 /**
  * application_post_init - for executing the business logic at the Post App Init of the application
  */
 function application_post_init() {
     appscore.print.start();
+    menuVisibility = false;
     //	googleAnalytics = new ganalytics.GAnalyticsLib("dsfhjdfhsdhskh"); //UA-80818309-1 for MyPower
     kony.application.setApplicationCallbacks(callbacksObj);
     if (loginManager.getLogin() != null) {
@@ -82,4 +72,20 @@ function getformTrackerName() {
 // call this below method in every postshow
 function trackForm() {
     googleAnalytics.trackForm(getformTrackerName());
+}
+
+function openFacebookLink() {
+    kony.application.openURL("fb://page/facebook.com/SaffronSouthMorang/");
+}
+
+function openWebLink() {
+    kony.application.openURL("https://www.eatatsaffron.com.au/");
+}
+
+function dialMyNumber() {
+    kony.phone.dial("0394041844");
+}
+
+function openMapApp() {
+    kony.application.openURL("http://maps.google.com/maps?daddr=1/5+Danaher+Dr,+South+Morang+VIC+3752");
 }

@@ -1,0 +1,27 @@
+{
+    "AS_FlexContainer_5e7f507ed37849a48538c39f195ec980": {
+        "id": "AS_FlexContainer_5e7f507ed37849a48538c39f195ec980",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHome",
+            "type": "forms",
+            "platform": "",
+            "KUID": "979e555fb19d4cd7a7ffcaf53cf45019"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___983fd1363d014f179e85806e25da9f42",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "dialMyNumber",
+            "display": "dialMyNumber",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}
